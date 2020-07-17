@@ -22,9 +22,7 @@ body {
 	font-family: "robotomedium";
 	font-size: 17px;
 }
-.mt {
-	margin-top: 50px;
-}
+
 /* navbar styles */
 .navbar-light .navbar-toggler {
 	border-color: transparent;
@@ -57,6 +55,9 @@ body {
 	}
 	.btn-navbar {
 		font-family: "robotoregular";
+	}
+	.mt {
+		margin-top: 50px;
 	}
 }
 @media only screen and (max-width: 844px) {
