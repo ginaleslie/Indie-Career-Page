@@ -1,0 +1,89 @@
+/* importing fonts */
+@font-face {
+	font-family: "robotoregular";
+	src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
+		url("../fonts/roboto-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "robotomedium";
+	src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"),
+		url("../fonts/roboto-medium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+/* body styles */
+body {
+	font-family: "robotoregular";
+	list-style: none;
+}
+.bold {
+	font-family: "robotomedium";
+	font-size: 17px;
+}
+.mt {
+	margin-top: 50px;
+}
+/* navbar styles */
+.navbar-light .navbar-toggler {
+	border-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #0075c9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #333e48;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-right: 1.5rem;
+	padding-left: 0.5rem;
+}
+
+.navbar-collapse.collapse.show {
+	height: 92vh;
+}
+
+@media only screen and (max-width: 767px) {
+	.nav-link,
+	.btn-navbar {
+		margin-top: 15px;
+		font-size: 22px;
+		font-family: "robotomedium";
+	}
+	.btn-navbar {
+		font-family: "robotoregular";
+	}
+}
+@media only screen and (max-width: 844px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+}
+/* footer styles */
+.bg-dark-blue {
+	background: #00194d;
+	color: #ffffff;
+}
+.bg-light-blue {
+	background: #0075c9;
+	color: #ffffff;
+}
+/* btn primary */
+.btn-primary {
+	background: #0075c9;
+	padding: 7px 25px;
+}
+.btn-primary:hover {
+	background: #0270bf;
+}
+/* heading styles */
+h2 {
+	font-size: 28px;
+	font-family: "robotomedium";
+}
