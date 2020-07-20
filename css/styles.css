@@ -39,6 +39,7 @@ nav {
 /* removed padding and margin of these because they gave overflow issues */
 .row,
 .form-row {
+	padding: 0;
 	margin-right: 0px;
 	margin-left: 0px;
 }
@@ -111,6 +112,78 @@ h2 {
 	font-size: 28px;
 	font-family: "robotomedium";
 }
+
+.current-opportunities {
+	background-color: #0075C9;
+	border-radius: 4px;
+	color: #FFFFFF;
+	/* font-size: 20px; */
+}
+
+.graduates {
+	font-size: 14px; 
+	padding: 15px; 
+	font-weight: 900; 
+	letter-spacing: 0.04em;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: -0.2px;
+	color: #FFFFFF;
+	}
+
+@media (max-width: 572px) {
+	.row{
+		padding: 0;
+	}
+	.bg-gradient {
+		height: 91vh;
+		width: 100%;
+		background-image: linear-gradient(90.74deg, #0075C9 0%, #76C2B6 100%);;
+	}
+
+	.heading4-light {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300 !important;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: -0.4px;
+		color: #FFFFFF;
+	}
+
+	.white-heading-careers-mobile {
+		padding: 0 15px 0 15px;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #ffffff;	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.white-subheading-careers-mobile{
+		padding: 0 40px;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+		display: flex;
+		align-items: flex-end;
+		text-align: center;
+		letter-spacing: -0.4px;
+		color: #FFFFFF;
+
+	}
+}
+
+
 .small-text {
 	font-size: 12px;
 }
