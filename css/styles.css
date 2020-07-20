@@ -39,6 +39,7 @@ nav {
 /* removed padding and margin of these because they gave overflow issues */
 .row,
 .form-row {
+	padding: 0;
 	margin-right: 0px;
 	margin-left: 0px;
 }
@@ -135,7 +136,7 @@ h2 {
 
 @media (max-width: 572px) {
 	.row{
-		padding: 15px;
+		padding: 0;
 	}
 	.bg-gradient {
 		height: 91vh;
