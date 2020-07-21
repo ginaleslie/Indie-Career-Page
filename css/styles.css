@@ -170,7 +170,7 @@ h2 {
     color: #0075C9;
 }
 
-.employee-benefit-bold {
+.mobile-h5, .d-employee-benefit-bold {
     font-weight: bold;
     font-size: 28px;
     line-height: 32px;
@@ -178,6 +178,8 @@ h2 {
     letter-spacing: -0.8px;
     color: #333E48;
 }
+
+
 
 .heading4-light, .heading4-light-desktop {
     font-weight: 300;
@@ -264,7 +266,7 @@ h2 {
 		width: 100%;
 		background-image: linear-gradient(180deg, #0075C9 0%, #76C2B6 100%);
 	}
-    .bg-gradient {
+    .mobile-cover {
         display: none;
     }
 
@@ -278,9 +280,13 @@ h2 {
         color: #333E48;
         display: flex;
         align-items: flex-end;
-    }
+	}
+	
+	.d-employee-benefit-bold{
+		display: none;
+	}
 
-    .employee-benefit-bold {
+    .mobile-h5 {
         display: none;
     }
 
@@ -326,22 +332,6 @@ h2 {
 
     }
 
-    .cover-image-tab-desk {
-        background-image: url(../images/Indie\ Laughing\ BG.svg);
-        /* 	
-        background-size: cover;
-        height: 200px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -77px;
-        overflow: hidden;
-        width: 750px;
-        max-width: none;
-        flex: 1;
-        flex-wrap: wrap; */
-    }
-
     .bg-grey-desktop {
         background-color: #E5E5E5;
     }
@@ -383,14 +373,18 @@ h2 {
         height: 704px;
         left: 50px;
     
-    }
+	}
+	
+	.wealthbonus-img {
+		width: 90%;
+	}
  }
 
 @media (max-width: 572px) {
 	.desktop-cover, .cover-picture{
 		display: none;
 	}
-	.bg-gradient {
+	.mobile-cover {
 		height: 91vh;
 		width: 100%;
 		background-image: linear-gradient(90.74deg, #0075C9 0%, #76C2B6 100%);;
@@ -418,7 +412,7 @@ h2 {
 	
 	
 
-	.employee-benefit-bold {
+	.mobile-h5 {
 		
 		padding-left: 27px;
 		padding-right: 27px;
