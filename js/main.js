@@ -7,17 +7,6 @@
 			var formOne = document.getElementsByClassName("needs-validation-1");
 			// Loop over them and prevent submission
 			var validation = Array.prototype.filter.call(formOne, function (formOne) {
-				// form.addEventListener(
-				// 	"submit",
-				// 	function (event) {
-				// 		if (form.checkValidity() === false) {
-				// 			event.preventDefault();
-				// 			event.stopPropagation();
-				// 		}
-				// 		form.classList.add("was-validated");
-				// 	},
-				// 	false
-				// );
 				document.getElementById("next").addEventListener(
 					"click",
 					function (event) {
@@ -25,6 +14,7 @@
 							event.preventDefault();
 							event.stopPropagation();
 						} else {
+							window.scrollTo(0, 0);
 							document.getElementById("next").innerHTML = "yeet";
 							event.preventDefault();
 							event.stopPropagation();
@@ -45,28 +35,15 @@
 						if (form.checkValidity() === false) {
 							event.preventDefault();
 							event.stopPropagation();
+						} else {
+							event.preventDefault();
+							event.stopPropagation();
+							document.getElementById("form-popup").style.display = "block";
 						}
 						form.classList.add("was-validated");
 					},
 					false
 				);
-				// document.getElementById("next").addEventListener(
-				// 	"click",
-				// 	function (event) {
-				// 		if (formOne.checkValidity() === false) {
-				// 			event.preventDefault();
-				// 			event.stopPropagation();
-				// 		} else {
-				// 			document.getElementById("next").innerHTML = "yeet";
-				// 			event.preventDefault();
-				// 			event.stopPropagation();
-				// 			document.getElementById("form-1").style.display = "none";
-				// 			document.getElementById("form-2").style.display = "block";
-				// 		}
-				// 		formOne.classList.add("was-validated");
-				// 	},
-				// 	false
-				// );
 			});
 		},
 		false
