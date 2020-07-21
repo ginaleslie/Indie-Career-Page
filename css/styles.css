@@ -389,13 +389,17 @@ h2 {
 		display: none;
 	}
 
-	.girl-laughing-mobile > img {
+	.girl-laughing-mobile > img{
 		max-width: 296px;
+	}
+
+	.girl-laughing-desktop  {
+		display: none;
 	}
 
 	.fabs{
 		right: 37px;
-		bottom: -6px;
+		bottom: 24px;
 	}
 
 	.desktop-split{
