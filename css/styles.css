@@ -267,3 +267,30 @@ h2 {
 .blue {
 	color: #237ab9;
 }
+
+.vacancy-ltext{
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+
+
+	display: flex;
+	align-items: flex-end;
+	letter-spacing: -0.6px;
+
+	color: #555E66;
+
+
+}
+
+.vacancy-text{
+
+font-size: 16px;
+line-height: 20px;
+
+
+color: #666E75;
+}
