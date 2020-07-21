@@ -308,12 +308,11 @@ h2 {
 			background-color: #FFFFFF;
 		}
 		.blue-uppercase { 
-			padding: 55px 0 17px 0;
-		}
-
-		.bg-grey > .blue-uppercase {
+			padding: 55px 15px 17px 0;
 			text-align: left;
 		}
+
+		
 
 		.heading4-light {
 			padding-left: 342px;
@@ -333,6 +332,14 @@ h2 {
 
 		.girl-laughing-mobile {
 			display: none;
+		}
+
+		.girl-laughing-desktop {
+			position: relative;
+			width: 578px;
+			height: 704px;
+			left: 50px;
+		
 		}
 	 }
 
@@ -390,7 +397,7 @@ h2 {
 	}
 
 	.girl-laughing-mobile > img{
-		max-width: 296px;
+		max-width: 250px;
 	}
 
 	.girl-laughing-desktop  {
@@ -402,9 +409,7 @@ h2 {
 		bottom: 24px;
 	}
 
-	.desktop-split{
-		display: none;
-	}
+	
 
 }
 
