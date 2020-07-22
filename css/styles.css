@@ -6,20 +6,19 @@
 }
 /* body styles */
 body {
-	font-family: "Roboto";
-	font-weight: 300;
+	font-family: "robotolight";
 }
 .no-style-list {
 	list-style: none;
 }
 nav {
-	font-weight: 500 !important;
+	font-family: "robotoregular";
 }
 .bold {
-	font-weight: 500;
+	font-family: "robotomedium";
 }
 .regular {
-	font-weight: 400;
+	font-family: "robotoregular";
 }
 /* removed padding and margin of these because they gave overflow issues */
 .row,
@@ -95,7 +94,7 @@ nav {
 /* font styles */
 h2 {
 	font-size: 28px;
-	font-weight: 600;
+	font-family: "robotomedium";
 }
 
 .current-opportunities {
