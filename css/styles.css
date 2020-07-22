@@ -117,7 +117,7 @@ h2 {
 	background-color: #0075c9;
 	border-radius: 4px;
 	color: #ffffff;
-	/* font-size: 20px; */
+	font-size: 16px;
 }
 
 .graduates {
@@ -128,102 +128,107 @@ h2 {
 	border: 1px solid #ffffff;
 	border-radius: 4px;
 	font-weight: 500;
-	font-size: 14px;
+
 	text-align: center;
 	letter-spacing: -0.2px;
 	color: #ffffff;
 }
-
+.font-16 {
+	font-size: 16px;
+}
 .white-heading-careers-mobile {
-		
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #ffffff;	
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: -1px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.white-subheading-careers-mobile{
-
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    letter-spacing: -0.4px;
-    color: #FFFFFF;
+.white-subheading-careers-mobile {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	letter-spacing: -0.4px;
+	color: #ffffff;
 }
 
-.blue-uppercase { 
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    color: #0075C9;
+.blue-uppercase {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #0075c9;
 }
 
 .employee-benefit-bold {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: -0.8px;
-    color: #333E48;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: -0.8px;
+	color: #333e48;
 }
 
-.heading4-light, .heading4-light-desktop {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #333E48;
-    text-align: center;
+.heading4-light,
+.heading4-light-desktop {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #333e48;
+	text-align: center;
 }
 
 .heading4-bold {
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #333E48;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #333e48;
 }
 
 .company-values {
-    padding-left: 5px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #828282;
+	padding-left: 5px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #828282;
 }
 
 .fabs {
-    position: fixed;
-    right: 32px;
-    bottom: 32px;
-    background-color: transparent;
-    height: 0px;
-    width: 110px;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+	background-color: transparent;
+	height: 0px;
+	width: 110px;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .fabs:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .desktop-title {
-    padding-top: 185px;
+	padding-top: 0;
+	padding-bottom: 110px;
+	z-index: 4;
+	max-width: 592px;
+	margin-left: 20px;
 }
 
 .get-started-button-d {
@@ -239,96 +244,93 @@ h2 {
 .contact-button-d {
 	height: 60px;
 	width: 191px;
-	background-color: #FFFFFF;
-	border: 1px solid #615D5D;
+	background-color: #ffffff;
+	border: 1px solid #615d5d;
 	box-sizing: border-box;
 	border-radius: 4px;
 	text-align: center;
 	letter-spacing: -0.2px;
-	color: #6A7083;
+	color: #6a7083;
 	font-weight: 500;
 	font-size: 14px;
 }
+.responsive-img {
+	width: 100%;
+	height: auto;
+	max-width: 792px;
+	position: absolute;
+	bottom: 0;
+}
 
 /* tablet - desktop */
-@media (min-width: 768px){ 
+@media (min-width: 768px) {
 	.get-started {
 		font-weight: bold;
 		font-size: 40px;
 		line-height: 50px;
 		letter-spacing: -1px;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 	.bg-gradient-d {
 		height: 75vh;
 		width: 100%;
-		background-image: linear-gradient(180deg, #0075C9 0%, #76C2B6 100%);
+		background-image: linear-gradient(180deg, #0075c9 0%, #76c2b6 100%);
 	}
-    .bg-gradient {
-        display: none;
-    }
+	.bg-gradient {
+		display: none;
+	}
 
-    .deskop-h1 {
-        width: 497px;
-        padding-left: 15px;
-        font-weight: bold;
-        font-size: 52px;
-        line-height: 64px;
-        letter-spacing: -1.6px;
-        color: #333E48;
-        display: flex;
-        align-items: flex-end;
-    }
+	.deskop-h1 {
+		padding-left: 6px;
+		font-weight: bold;
+		font-size: 52px;
+		line-height: 64px;
+		letter-spacing: -1.6px;
+		color: #333e48;
+		display: flex;
+		align-items: flex-end;
+	}
 
-    .employee-benefit-bold {
-        display: none;
-    }
+	.employee-benefit-bold {
+		display: none;
+	}
 
-    .desktop-h5{
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        letter-spacing: -1px;
-        color: #333E48;
-        padding-left: 327px;
-        padding-right: 325px;
-        padding-bottom: 35px;
-    }
+	.desktop-h5 {
+		font-size: 40px;
+		line-height: 48px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #333e48;
+		padding-left: 327px;
+		padding-right: 325px;
+		padding-bottom: 35px;
+	}
 
-    .heading4-light-desktop {
-        padding: 0;
-        text-align: left;
-    }
+	.heading4-light-desktop {
+		padding: 0;
+		text-align: left;
+	}
 
-    .lead {
-        padding-left: 15px;
-        color: #333E48;
-    }
+	.lead {
+		padding-left: 10px;
+		color: #333e48;
+	}
 
-    /* .current-opportunities, .graduates {
+	/* .current-opportunities, .graduates {
         width: 210px;
         height: 56px;
     } */
 
-    .desktop-cover {
-        background-size: cover;
-        
-    }
+	.desktop-cover {
+		background-size: cover;
+	}
 
-    .cover-picture {
-        background-image: url(../images/Indie\ Laughing\ BG.svg);
-        position: relative;
-        width: 792px;
-        height: 748px;
-        left: -86px;
-        top: 124px;
-        overflow: hidden;
-
-    }
-
-    .cover-image-tab-desk {
-        background-image: url(../images/Indie\ Laughing\ BG.svg);
-        /* 	
+	.padding-style {
+		padding: 180px 0 0;
+	}
+	.cover-image-tab-desk {
+		background-image: url(../images/indie-cover.png);
+		/* 	
         background-size: cover;
         height: 200px;
         position: absolute;
@@ -340,122 +342,113 @@ h2 {
         max-width: none;
         flex: 1;
         flex-wrap: wrap; */
-    }
+	}
 
-    .bg-grey-desktop {
-        background-color: #E5E5E5;
-    }
-    .bg-grey {
-        background-color: #FFFFFF;
-    }
-    .blue-uppercase { 
-        padding: 55px 15px 17px 0;
-        text-align: left;
-    }
+	.bg-grey-desktop {
+		background-color: #e5e5e5;
+	}
+	.bg-grey {
+		background-color: #ffffff;
+	}
+	.blue-uppercase {
+		padding: 55px 15px 17px 0;
+		text-align: left;
+	}
 
-    .bg-grey-desktop  > .blue-uppercase {
-        text-align: center;
-    }
+	.bg-grey-desktop > .blue-uppercase {
+		text-align: center;
+	}
 
-    .heading4-light {
-        padding-left: 342px;
-        padding-right: 339px;
-        padding-bottom: 89px;
-    }
+	.heading4-light {
+		padding-left: 342px;
+		padding-right: 339px;
+		padding-bottom: 89px;
+	}
 
-    .desktop-row-adj{
-        padding-left: 164px;
-        padding-right: 174px;
-        padding-bottom: 130px;
-    }
+	.desktop-row-adj {
+		padding-left: 164px;
+		padding-right: 174px;
+		padding-bottom: 130px;
+	}
 
-    .heading4-bold {
-        width: 267px;
-    }
+	.heading4-bold {
+		width: 267px;
+	}
 
-    .girl-laughing-mobile {
-        display: none;
-    }
+	.girl-laughing-mobile {
+		display: none;
+	}
 
-    .girl-laughing-desktop {
-        position: relative;
-        width: 578px;
-        height: 704px;
-        left: 50px;
-    
-    }
- }
+	.girl-laughing-desktop {
+		position: relative;
+		width: 578px;
+		height: 704px;
+		left: 50px;
+	}
+}
 
-@media (max-width: 572px) {
-	.desktop-cover, .cover-picture{
+@media (max-width: 767.98px) {
+	.desktop-cover,
+	.cover-picture {
 		display: none;
 	}
 	.bg-gradient {
 		height: 91vh;
 		width: 100%;
-		background-image: linear-gradient(90.74deg, #0075C9 0%, #76C2B6 100%);;
+		background-image: linear-gradient(90.74deg, #0075c9 0%, #76c2b6 100%);
 	}
-
 
 	.white-heading-careers-mobile {
-		padding: 62px 15px 0 15px;	
+		padding: 62px 15px 0 15px;
 	}
 
-	.white-subheading-careers-mobile{
+	.white-subheading-careers-mobile {
 		padding: 0 30px;
 		padding-top: 13px;
 		padding-bottom: 5px;
 	}
 
-	.current-opportunities, .graduates {
+	.current-opportunities,
+	.graduates {
 		padding: 14px;
 	}
 
-	.blue-uppercase { 
+	.blue-uppercase {
 		padding: 55px 26px 17px 26px;
 	}
 
-	
-	
-
 	.employee-benefit-bold {
-		
 		padding-left: 27px;
 		padding-right: 27px;
 	}
 
-	.heading4-light{
+	.heading4-light {
 		padding-top: 35px;
-
 	}
 	.heading4-bold {
 		padding-top: 20px;
-		
-	}
-	
-	.bg-grey {
-		background-color: #E5E5E5;
 	}
 
-	.desktop-h5{
+	.bg-grey {
+		background-color: #e5e5e5;
+	}
+
+	.desktop-h5 {
 		display: none;
 	}
 
-	.girl-laughing-mobile > img{
+	.girl-laughing-mobile > img {
 		max-width: 250px;
 	}
 
-	.girl-laughing-desktop  {
+	.girl-laughing-desktop {
 		display: none;
 	}
 
-	.fabs{
+	.fabs {
 		right: 37px;
 		bottom: 24px;
 	}
-
-	
-
 }
 
 .small-text {
@@ -655,29 +648,79 @@ a:hover {
 	}
 }
 
-.vacancy-ltext{
-
+.vacancy-ltext {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 28px;
 
-
 	display: flex;
 	align-items: flex-end;
 	letter-spacing: -0.6px;
 
-	color: #555E66;
-
-
+	color: #555e66;
 }
 
-.vacancy-text{
+.vacancy-text {
+	font-size: 16px;
+	line-height: 20px;
 
-font-size: 16px;
-line-height: 20px;
-
-
-color: #666E75;
+	color: #666e75;
+}
+@media only screen and (max-width: 1200px) {
+	.padding-style {
+		padding-top: 130px;
+	}
+	.desktop-title {
+		padding-bottom: 60px;
+	}
+}
+@media only screen and (max-width: 985px) {
+	.padding-style {
+		padding-top: 90px;
+	}
+	.desktop-title {
+		padding-bottom: 50px;
+		margin-left: 10px;
+	}
+	.deskop-h1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.font-16 {
+		font-size: 13px;
+	}
+	.current-opportunities {
+		font-size: 13px;
+	}
+	.desktop-title {
+		min-width: 373px;
+	}
+	.responsive-img {
+		padding-left: 20px;
+	}
+}
+@media only screen and (max-width: 905px) {
+	.padding-style {
+		padding-top: 60px;
+	}
+	.desktop-title {
+		padding-bottom: 50px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.responsive-img {
+		width: 792px;
+		height: auto;
+		position: relative;
+		bottom: 0;
+		float: right;
+	}
+	.padding-style {
+		padding-top: 30px;
+	}
+	.desktop-title {
+		padding-top: 150px;
+	}
 }
