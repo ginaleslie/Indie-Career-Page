@@ -1,40 +1,26 @@
-/* importing fonts */
-@font-face {
-	font-family: "robotoregular";
-	src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-regular-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "robotomedium";
-	src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-medium-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "robotolight";
-	src: url("../fonts/roboto-light-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-light-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
 /* body styles */
-body {
-	font-family: "robotolight";
+html {
+	font-family: 'Roboto', Helvetica;
 }
+h1 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+}
+
 .no-style-list {
 	list-style: none;
-}
-nav {
-	font-family: "robotoregular";
-}
-.bold {
-	font-family: "robotomedium";
-}
-.regular {
-	font-family: "robotoregular";
 }
 /* removed padding and margin of these because they gave overflow issues */
 .row,
@@ -76,10 +62,10 @@ nav {
 	.btn-navbar {
 		margin-top: 15px;
 		font-size: 22px;
-		font-family: "robotomedium";
+		font-family: 'robotomedium';
 	}
 	.btn-navbar {
-		font-family: "robotoregular";
+		font-family: 'robotoregular';
 	}
 }
 @media only screen and (max-width: 844px) {
@@ -110,14 +96,21 @@ nav {
 /* font styles */
 h2 {
 	font-size: 28px;
-	font-family: "robotomedium";
+	font-family: 'robotomedium';
 }
 
-.current-opportunities {
+.current-opportunities,
+.blue-button {
 	background-color: #0075c9;
 	border-radius: 4px;
 	color: #ffffff;
 	/* font-size: 20px; */
+}
+
+.transparent-button {
+	background-color: transparent;
+	border-radius: 4px;
+	color: #ffffff;
 }
 
 .graduates {
@@ -135,97 +128,95 @@ h2 {
 }
 
 .white-heading-careers-mobile {
-		
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #ffffff;	
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: -1px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.white-subheading-careers-mobile{
-
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    letter-spacing: -0.4px;
-    color: #FFFFFF;
+.white-subheading-careers-mobile {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	letter-spacing: -0.4px;
+	color: #ffffff;
 }
 
-.blue-uppercase { 
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    color: #0075C9;
+.blue-uppercase {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #0075c9;
 }
 
-.mobile-h5, .d-employee-benefit-bold {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: -0.8px;
-    color: #333E48;
+.mobile-h5,
+.d-employee-benefit-bold {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: -0.8px;
+	color: #333e48;
 }
 
-
-
-.heading4-light, .heading4-light-desktop {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #333E48;
-    text-align: center;
+.heading4-light,
+.heading4-light-desktop {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #333e48;
+	text-align: center;
 }
 
 .heading4-bold {
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #333E48;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #333e48;
 }
 
 .company-values {
-    padding-left: 5px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    color: #828282;
+	padding-left: 5px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #828282;
 }
 
 .fabs {
-    position: fixed;
-    right: 32px;
-    bottom: 32px;
-    background-color: transparent;
-    height: 0px;
-    width: 110px;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+	background-color: transparent;
+	height: 0px;
+	width: 110px;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .fabs:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .desktop-title {
-    padding-top: 185px;
+	padding-top: 185px;
 }
 
 .get-started-button-d {
@@ -241,215 +232,259 @@ h2 {
 .contact-button-d {
 	height: 60px;
 	width: 191px;
-	background-color: #FFFFFF;
-	border: 1px solid #615D5D;
+	background-color: #ffffff;
+	border: 1px solid #615d5d;
 	box-sizing: border-box;
 	border-radius: 4px;
 	text-align: center;
 	letter-spacing: -0.2px;
-	color: #6A7083;
+	color: #6a7083;
 	font-weight: 500;
 	font-size: 14px;
 }
 
-/* tablet - desktop */
-@media (min-width: 768px){ 
+.bg-aqua-gradient {
+	background-image: linear-gradient(180deg, #0a7cc8 0%, #63b5b9 100%);
+	z-index: -1;
+}
+.bg-neutral {
+	background: #f3f5f8;
+}
+/* tablet */
+@media (max-width: 767px) {
+	/* tablet widths and stuff */
+	.cover-picture {
+		max-height: 650px;
+	}
+	.blue-button,
+	.transparent-button {
+		padding: 14px;
+	}
+	.mobile-cover {
+		display: none;
+	}
+	.mobile-h5 {
+		display: none;
+	}
+	.girl-laughing-mobile {
+		display: none;
+	}
+	.desktop-cover {
+		display: none;
+	}
+}
+
+/* desktop */
+@media (max-width: 1199.98px) {
 	.get-started {
 		font-weight: bold;
 		font-size: 40px;
 		line-height: 50px;
 		letter-spacing: -1px;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 	.bg-gradient-d {
 		height: 75vh;
 		width: 100%;
-		background-image: linear-gradient(180deg, #0075C9 0%, #76C2B6 100%);
+		background-image: linear-gradient(180deg, #0075c9 0%, #76c2b6 100%);
 	}
-    .mobile-cover {
-        display: none;
-    }
-
-    .deskop-h1 {
-        width: 497px;
-        padding-left: 15px;
-        font-weight: bold;
-        font-size: 52px;
-        line-height: 64px;
-        letter-spacing: -1.6px;
-        color: #333E48;
-        display: flex;
-        align-items: flex-end;
-	}
-	
-	.d-employee-benefit-bold{
+	.mobile-cover {
 		display: none;
 	}
 
-    .mobile-h5 {
-        display: none;
-    }
+	.deskop-h1 {
+		width: 497px;
+		padding-left: 15px;
+		font-weight: bold;
+		font-size: 52px;
+		line-height: 64px;
+		letter-spacing: -1.6px;
+		color: #333e48;
+		display: flex;
+		align-items: flex-end;
+	}
 
-    .desktop-h5{
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        letter-spacing: -1px;
-        color: #333E48;
-        padding-left: 327px;
-        padding-right: 325px;
-        padding-bottom: 35px;
-    }
+	.d-employee-benefit-bold {
+		display: none;
+	}
 
-    .heading4-light-desktop {
-        padding: 0;
-        text-align: left;
-    }
+	.mobile-h5 {
+		display: none;
+	}
 
-    .lead {
-        padding-left: 15px;
-        color: #333E48;
-    }
+	.desktop-h5 {
+		font-size: 40px;
+		line-height: 48px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #333e48;
+		padding-left: 327px;
+		padding-right: 325px;
+		padding-bottom: 35px;
+	}
 
-    /* .current-opportunities, .graduates {
+	.heading4-light-desktop {
+		padding: 0;
+		text-align: left;
+	}
+
+	.lead {
+		padding-left: 15px;
+		color: #333e48;
+	}
+
+	/* .current-opportunities, .graduates {
         width: 210px;
         height: 56px;
     } */
 
-    .desktop-cover {
-        background-size: cover;
-        
-    }
-
-    .cover-picture {
-        background-image: url(../images/Indie\ Laughing\ BG.svg);
-        position: relative;
-        width: 792px;
-        height: 748px;
-        left: -86px;
-        top: 124px;
-        overflow: hidden;
-
-    }
-
-    .bg-grey-desktop {
-        background-color: #E5E5E5;
-    }
-    .bg-grey {
-        background-color: #FFFFFF;
-    }
-    .blue-uppercase { 
-        padding: 55px 15px 17px 0;
-        text-align: left;
-    }
-
-    .bg-grey-desktop  > .blue-uppercase {
-        text-align: center;
-    }
-
-    .heading4-light {
-        padding-left: 342px;
-        padding-right: 339px;
-        padding-bottom: 89px;
-    }
-
-    .desktop-row-adj{
-        padding-left: 164px;
-        padding-right: 174px;
-        padding-bottom: 130px;
-    }
-
-    .heading4-bold {
-        width: 267px;
-    }
-
-    .girl-laughing-mobile {
-        display: none;
-    }
-
-    .girl-laughing-desktop {
-        position: relative;
-        width: 578px;
-        height: 704px;
-        left: 50px;
-    
+	.desktop-cover {
+		position: relative;
+		width: 792px;
+		height: 748px;
+		left: -86px;
+		top: 88px;
+		overflow: hidden;
+		background-size: cover;
 	}
-	
+
+	.desktop-picture {
+		position: relative;
+		top: 40px;
+		overflow: hidden;
+		z-index: -1;
+	}
+
+	.cover-picture {
+		z-index: -1;
+	}
+
+	.bg-grey-desktop {
+		background-color: #e5e5e5;
+	}
+	.bg-grey {
+		background-color: #ffffff;
+	}
+	.blue-uppercase {
+		padding: 55px 15px 17px 0;
+		text-align: left;
+	}
+
+	.bg-grey-desktop > .blue-uppercase {
+		text-align: center;
+	}
+
+	.heading4-light {
+		padding-left: 342px;
+		padding-right: 339px;
+		padding-bottom: 89px;
+	}
+
+	.desktop-row-adj {
+		padding-left: 164px;
+		padding-right: 174px;
+		padding-bottom: 130px;
+	}
+
+	.heading4-bold {
+		width: 267px;
+	}
+
+	.girl-laughing-mobile {
+		display: none;
+	}
+
+	.girl-laughing-desktop {
+		position: relative;
+		width: 578px;
+		height: 704px;
+		left: 50px;
+	}
+
 	.wealthbonus-img {
 		width: 90%;
 	}
- }
 
+	.quote {
+		background: #ffc500;
+		border-radius: 4px;
+		color: #ffffff;
+	}
+}
+/* mobile */
 @media (max-width: 572px) {
-	.desktop-cover, .cover-picture{
+	.desktop-cover,
+	.cover-picture,
+	.desktop-picture {
 		display: none;
 	}
 	.mobile-cover {
 		height: 91vh;
 		width: 100%;
-		background-image: linear-gradient(90.74deg, #0075C9 0%, #76C2B6 100%);;
+		background-image: linear-gradient(90.74deg, #0075c9 0%, #76c2b6 100%);
 	}
 
+	.home-heading-mobile {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: -0.6px;
+		color: #333e48;
+	}
 
 	.white-heading-careers-mobile {
-		padding: 62px 15px 0 15px;	
+		padding: 62px 15px 0 15px;
 	}
 
-	.white-subheading-careers-mobile{
+	.white-subheading-careers-mobile {
 		padding: 0 30px;
 		padding-top: 13px;
 		padding-bottom: 5px;
 	}
 
-	.current-opportunities, .graduates {
+	.current-opportunities,
+	.graduates,
+	.blue-button,
+	.transparent-button {
 		padding: 14px;
 	}
 
-	.blue-uppercase { 
+	.blue-uppercase {
 		padding: 55px 26px 17px 26px;
 	}
 
-	
-	
-
 	.mobile-h5 {
-		
 		padding-left: 27px;
 		padding-right: 27px;
 	}
 
-	.heading4-light{
+	.heading4-light {
 		padding-top: 35px;
-
 	}
 	.heading4-bold {
 		padding-top: 20px;
-		
 	}
-	
+
 	.bg-grey {
-		background-color: #E5E5E5;
+		background-color: #e5e5e5;
 	}
 
-	.desktop-h5{
+	.desktop-h5 {
 		display: none;
 	}
 
-	.girl-laughing-mobile > img{
-		max-width: 250px;
+	.girl-laughing-mobile > img {
+		max-width: 90%;
 	}
 
-	.girl-laughing-desktop  {
+	.girl-laughing-desktop {
 		display: none;
 	}
 
-	.fabs{
+	.fabs {
 		right: 37px;
 		bottom: 24px;
 	}
-
-	
-
 }
 
 .small-text {
@@ -516,7 +551,7 @@ h2 {
 	color: #f26901;
 }
 
-input[type="file"] {
+input[type='file'] {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -649,29 +684,23 @@ a:hover {
 	}
 }
 
-.vacancy-ltext{
-
+.vacancy-ltext {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 28px;
 
-
 	display: flex;
 	align-items: flex-end;
 	letter-spacing: -0.6px;
 
-	color: #555E66;
-
-
+	color: #555e66;
 }
 
-.vacancy-text{
+.vacancy-text {
+	font-size: 16px;
+	line-height: 20px;
 
-font-size: 16px;
-line-height: 20px;
-
-
-color: #666E75;
+	color: #666e75;
 }
