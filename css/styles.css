@@ -7,6 +7,7 @@
 body {
 	font-family: "Roboto";
 	font-weight: 300;
+	overflow-x: hidden;
 }
 .no-style-list {
 	list-style: none;
@@ -245,6 +246,10 @@ h2 {
 	position: absolute;
 	bottom: 0;
 }
+.career-hr {
+	border-top: 2px solid rgba(0, 0, 0, 0.15);
+	margin-top: 2px;
+}
 
 /* tablet - desktop */
 @media (min-width: 768px) {
@@ -275,18 +280,12 @@ h2 {
 		align-items: flex-end;
 	}
 
-	.employee-benefit-bold {
-		display: none;
-	}
-
 	.desktop-h5 {
 		font-size: 40px;
 		line-height: 48px;
 		text-align: center;
 		letter-spacing: -1px;
 		color: #333e48;
-		padding-left: 327px;
-		padding-right: 325px;
 		padding-bottom: 35px;
 	}
 
@@ -299,11 +298,6 @@ h2 {
 		padding-left: 10px;
 		color: #333e48;
 	}
-
-	/* .current-opportunities, .graduates {
-        width: 210px;
-        height: 56px;
-    } */
 
 	.desktop-cover {
 		background-size: cover;
@@ -344,19 +338,11 @@ h2 {
 	}
 
 	.heading4-light {
-		padding-left: 342px;
-		padding-right: 339px;
-		padding-bottom: 89px;
+		padding-bottom: 59px;
 	}
 
 	.desktop-row-adj {
-		padding-left: 164px;
-		padding-right: 174px;
 		padding-bottom: 130px;
-	}
-
-	.heading4-bold {
-		width: 267px;
 	}
 
 	.girl-laughing-mobile {
@@ -392,7 +378,15 @@ h2 {
 		letter-spacing: -0.4px;
 		color: #ffffff;
 	}
-
+	.girl-1 {
+		display: none;
+	}
+	.current-opportunities {
+		font-size: 16px !important;
+	}
+	.font-16 {
+		font-size: 16px !important;
+	}
 	.white-heading-careers-mobile {
 		font-weight: bold;
 		font-size: 40px;
@@ -573,7 +567,7 @@ a:hover {
 		border-top: 1px solid rgba(0, 0, 0, 0.2);
 	}
 	.max-width {
-		margin: 50px 24px;
+		margin: 50px 10px;
 		padding: 0;
 	}
 	.fileUpload {
@@ -790,6 +784,14 @@ a:hover {
 	.to-16 {
 		font-size: 16px;
 	}
+	.heading4-light {
+		display: block !important;
+		color: #333e48;
+		padding-bottom: 40px !important;
+	}
+	.bg-grey-mobile {
+		background: #e5e5e5;
+	}
 }
 @media only screen and (max-width: 375px) {
 	.width-100 {
@@ -809,6 +811,12 @@ a:hover {
 	.desktop-title {
 		padding-bottom: 60px;
 	}
+	.girl-1 {
+		width: 100%;
+		height: auto;
+		left: 0;
+		padding-right: 20px;
+	}
 }
 @media only screen and (max-width: 985px) {
 	.padding-style {
@@ -822,6 +830,7 @@ a:hover {
 		font-size: 40px;
 		line-height: 48px;
 	}
+
 	.font-16 {
 		font-size: 13px;
 	}
@@ -834,6 +843,9 @@ a:hover {
 	.responsive-img {
 		padding-left: 20px;
 	}
+	.girl-1 {
+		margin-left: -80px;
+	}
 }
 @media only screen and (max-width: 905px) {
 	.padding-style {
@@ -841,6 +853,16 @@ a:hover {
 	}
 	.desktop-title {
 		padding-bottom: 50px;
+	}
+	.desktop-h5 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.heading4-light {
+		padding-bottom: 60px;
+	}
+	.heading4-light {
+		display: none;
 	}
 }
 @media only screen and (min-width: 1400px) {
@@ -857,4 +879,24 @@ a:hover {
 	.desktop-title {
 		padding-top: 150px;
 	}
+}
+.width-career {
+	max-width: 760px;
+
+	text-align: center;
+	display: block;
+
+	margin: 0 auto;
+}
+.font-28 {
+	font-size: 28px;
+}
+.bg-img-career {
+	width: 100%;
+	position: absolute;
+	height: auto;
+	margin-top: 10px;
+}
+.padding-100 {
+	padding-top: 130px;
 }
