@@ -1,26 +1,24 @@
+/* importing fonts */
+@font-face {
+	font-family: OpenDyslexic;
+	src: url("../fonts/OpenDyslexic-Regular.otf");
+}
 /* body styles */
-html {
-	font-family: 'Roboto', Helvetica;
+body {
+	font-family: "Roboto";
+	font-weight: 300;
 }
-h1 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 48px;
-	letter-spacing: -1px;
-}
-
-h2 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: bold;
-	font-size: 28px;
-	line-height: 32px;
-}
-
 .no-style-list {
 	list-style: none;
+}
+nav {
+	font-weight: 500;
+}
+.bold {
+	font-weight: 500;
+}
+.regular {
+	font-weight: 400;
 }
 /* removed padding and margin of these because they gave overflow issues */
 .row,
@@ -96,7 +94,7 @@ h2 {
 /* font styles */
 h2 {
 	font-size: 28px;
-	font-family: 'robotomedium';
+	font-weight: 500;
 }
 
 .current-opportunities,
@@ -104,7 +102,7 @@ h2 {
 	background-color: #0075c9;
 	border-radius: 4px;
 	color: #ffffff;
-	/* font-size: 20px; */
+	font-size: 16px;
 }
 
 .transparent-button {
@@ -121,12 +119,14 @@ h2 {
 	border: 1px solid #ffffff;
 	border-radius: 4px;
 	font-weight: 500;
-	font-size: 14px;
+
 	text-align: center;
 	letter-spacing: -0.2px;
 	color: #ffffff;
 }
-
+.font-16 {
+	font-size: 16px;
+}
 .white-heading-careers-mobile {
 	font-weight: bold;
 	font-size: 40px;
@@ -161,8 +161,7 @@ h2 {
 	color: #0075c9;
 }
 
-.mobile-h5,
-.d-employee-benefit-bold {
+.employee-benefit-bold {
 	font-weight: bold;
 	font-size: 28px;
 	line-height: 32px;
@@ -216,7 +215,11 @@ h2 {
 }
 
 .desktop-title {
-	padding-top: 185px;
+	padding-top: 0;
+	padding-bottom: 110px;
+	z-index: 4;
+	max-width: 592px;
+	margin-left: 20px;
 }
 
 .get-started-button-d {
@@ -241,6 +244,13 @@ h2 {
 	color: #6a7083;
 	font-weight: 500;
 	font-size: 14px;
+}
+.responsive-img {
+	width: 100%;
+	height: auto;
+	max-width: 792px;
+	position: absolute;
+	bottom: 0;
 }
 
 .bg-aqua-gradient {
@@ -276,6 +286,8 @@ h2 {
 
 /* desktop */
 @media (max-width: 1199.98px) {
+/* tablet - desktop */
+@media (min-width: 768px) {
 	.get-started {
 		font-weight: bold;
 		font-size: 40px;
@@ -288,13 +300,12 @@ h2 {
 		width: 100%;
 		background-image: linear-gradient(180deg, #0075c9 0%, #76c2b6 100%);
 	}
-	.mobile-cover {
+	.bg-gradient {
 		display: none;
 	}
 
 	.deskop-h1 {
-		width: 497px;
-		padding-left: 15px;
+		padding-left: 6px;
 		font-weight: bold;
 		font-size: 52px;
 		line-height: 64px;
@@ -304,11 +315,7 @@ h2 {
 		align-items: flex-end;
 	}
 
-	.d-employee-benefit-bold {
-		display: none;
-	}
-
-	.mobile-h5 {
+	.employee-benefit-bold {
 		display: none;
 	}
 
@@ -329,7 +336,7 @@ h2 {
 	}
 
 	.lead {
-		padding-left: 15px;
+		padding-left: 10px;
 		color: #333e48;
 	}
 
@@ -339,24 +346,26 @@ h2 {
     } */
 
 	.desktop-cover {
-		position: relative;
-		width: 792px;
-		height: 748px;
-		left: -86px;
-		top: 88px;
-		overflow: hidden;
 		background-size: cover;
 	}
 
-	.desktop-picture {
-		position: relative;
-		top: 40px;
-		overflow: hidden;
-		z-index: -1;
+	.padding-style {
+		padding: 180px 0 0;
 	}
-
-	.cover-picture {
-		z-index: -1;
+	.cover-image-tab-desk {
+		background-image: url(../images/indie-cover.png);
+		/* 	
+        background-size: cover;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -77px;
+        overflow: hidden;
+        width: 750px;
+        max-width: none;
+        flex: 1;
+        flex-wrap: wrap; */
 	}
 
 	.bg-grey-desktop {
@@ -400,93 +409,55 @@ h2 {
 		height: 704px;
 		left: 50px;
 	}
-
-	.wealthbonus-img {
-		width: 90%;
-	}
-
-	.quote {
-		background: #ffc500;
-		border-radius: 4px;
-		color: #ffffff;
-	}
 }
-/* mobile */
-@media (max-width: 572px) {
+
+@media (max-width: 767.98px) {
 	.desktop-cover,
-	.cover-picture,
-	.desktop-picture {
+	.cover-picture {
 		display: none;
 	}
-	.mobile-cover {
+	.bg-gradient {
 		height: 91vh;
 		width: 100%;
 		background-image: linear-gradient(90.74deg, #0075c9 0%, #76c2b6 100%);
 	}
 
-	.home-heading-mobile {
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 28px;
-		letter-spacing: -0.6px;
-		color: #333e48;
+	.heading4-light {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300 !important;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: -0.4px;
+		color: #ffffff;
 	}
 
 	.white-heading-careers-mobile {
-		padding: 62px 15px 0 15px;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.white-subheading-careers-mobile {
-		padding: 0 30px;
-		padding-top: 13px;
-		padding-bottom: 5px;
-	}
-
-	.current-opportunities,
-	.graduates,
-	.blue-button,
-	.transparent-button {
-		padding: 14px;
-	}
-
-	.blue-uppercase {
-		padding: 55px 26px 17px 26px;
-	}
-
-	.mobile-h5 {
-		padding-left: 27px;
-		padding-right: 27px;
-	}
-
-	.heading4-light {
-		padding-top: 35px;
-	}
-	.heading4-bold {
-		padding-top: 20px;
-	}
-
-	.bg-grey {
-		background-color: #e5e5e5;
-	}
-
-	.desktop-h5 {
-		display: none;
-	}
-
-	.girl-laughing-mobile > img {
-		max-width: 90%;
-	}
-
-	.girl-laughing-desktop {
-		display: none;
-	}
-
-	.fabs {
-		right: 37px;
-		bottom: 24px;
+		padding: 0 40px;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+		display: flex;
+		align-items: flex-end;
+		text-align: center;
+		letter-spacing: -0.4px;
+		color: #ffffff;
 	}
 }
-
 .small-text {
 	font-size: 12px;
 }
@@ -683,6 +654,45 @@ a:hover {
 		height: 450px;
 	}
 }
+/* vacancy options */
+.bg-gray {
+	background: #e5e5e5;
+}
+.max-width-nm {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px 24px;
+}
+.hire {
+	font-size: 34px;
+}
+.search-rounded {
+	background: #ffffff;
+	border: 1px solid #bcc4ce;
+	border-radius: 20px;
+	width: 60%;
+	padding: 7px 20px;
+	max-width: 500px;
+}
+.width-100 {
+	background: url(../images/header.png);
+	height: 207px;
+	background-position: center;
+}
+.search {
+	border: none;
+	outline: 0;
+}
+.search:active {
+	border: none;
+}
+.search:focus {
+	border: none;
+}
+#myUL {
+	list-style-type: none;
+	padding: 0;
+}
 
 .vacancy-ltext {
 	font-family: Roboto;
@@ -697,10 +707,213 @@ a:hover {
 
 	color: #555e66;
 }
+.search-black {
+	color: #333e48;
+}
+.job-card {
+	background: #ffffff;
+	/* Drop Shadow */
+
+	box-shadow: 0px 1px 2px rgba(189, 189, 189, 0.5);
+	border-radius: 3px;
+	margin-top: 20px;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block;
+}
+.text-search {
+	font-size: 20px;
+}
+.show-a-tag {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+	.width-100 {
+		background: url(../images/header-t.png);
+		height: 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.search-rounded {
+		width: 100%;
+	}
+	.hide-a-tag {
+		position: absolute;
+		margin-top: -38px;
+		right: 66px;
+		font-size: 14px;
+	}
 
 .vacancy-text {
 	font-size: 16px;
 	line-height: 20px;
 
 	color: #666e75;
+}
+	.to-16 {
+		font-size: 16px;
+	}
+
+@media only screen and (max-width: 375px) {
+	.width-100 {
+		background: url(../images/header-m.png);
+		height: 200px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+	}
+}
+.test {
+	font-weight: bold !important;
+}
+/* vacancy options */
+.bg-gray {
+	background: #e5e5e5;
+}
+.max-width-nm {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px 24px;
+}
+.hire {
+	font-size: 34px;
+}
+.search-rounded {
+	background: #ffffff;
+	border: 1px solid #bcc4ce;
+	border-radius: 20px;
+	width: 60%;
+	padding: 7px 20px;
+	max-width: 500px;
+}
+.width-100 {
+	background: url(../images/header.png);
+	height: 207px;
+	background-position: center;
+}
+.search {
+	border: none;
+	outline: 0;
+}
+.search:active {
+	border: none;
+}
+.search:focus {
+	border: none;
+}
+#myUL {
+	list-style-type: none;
+	padding: 0;
+}
+
+.search-black {
+	color: #333e48;
+}
+.job-card {
+	background: #ffffff;
+	/* Drop Shadow */
+
+	box-shadow: 0px 1px 2px rgba(189, 189, 189, 0.5);
+	border-radius: 3px;
+	margin-top: 20px;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block;
+}
+.text-search {
+	font-size: 20px;
+}
+.show-a-tag {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+	.width-100 {
+		background: url(../images/header-t.png);
+		height: 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.search-rounded {
+		width: 100%;
+	}
+	.hide-a-tag {
+		position: absolute;
+		margin-top: -38px;
+		right: 66px;
+		font-size: 14px;
+	}
+
+	.to-16 {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.width-100 {
+		background: url(../images/header-m.png);
+		height: 200px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+	}
+}
+.test {
+	font-weight: bold !important;
+}
+@media only screen and (max-width: 1200px) {
+	.padding-style {
+		padding-top: 130px;
+	}
+	.desktop-title {
+		padding-bottom: 60px;
+	}
+}
+@media only screen and (max-width: 985px) {
+	.padding-style {
+		padding-top: 90px;
+	}
+	.desktop-title {
+		padding-bottom: 50px;
+		margin-left: 10px;
+	}
+	.deskop-h1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.font-16 {
+		font-size: 13px;
+	}
+	.current-opportunities {
+		font-size: 13px;
+	}
+	.desktop-title {
+		min-width: 373px;
+	}
+	.responsive-img {
+		padding-left: 20px;
+	}
+}
+@media only screen and (max-width: 905px) {
+	.padding-style {
+		padding-top: 60px;
+	}
+	.desktop-title {
+		padding-bottom: 50px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.responsive-img {
+		width: 792px;
+		height: auto;
+		position: relative;
+		bottom: 0;
+		float: right;
+	}
+	.padding-style {
+		padding-top: 30px;
+	}
+	.desktop-title {
+		padding-top: 150px;
+	}
 }
