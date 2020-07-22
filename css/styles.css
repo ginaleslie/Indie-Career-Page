@@ -1,40 +1,25 @@
 /* importing fonts */
+
 @font-face {
-	font-family: "robotoregular";
-	src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-regular-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "robotomedium";
-	src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-medium-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "robotolight";
-	src: url("../fonts/roboto-light-webfont.woff2") format("woff2"),
-		url("../fonts/roboto-light-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
+	font-family: OpenDyslexic;
+	src: url("../fonts/OpenDyslexic-Regular.otf");
 }
 /* body styles */
 body {
-	font-family: "robotolight";
+	font-family: "Roboto";
+	font-weight: 300;
 }
 .no-style-list {
 	list-style: none;
 }
 nav {
-	font-family: "robotoregular";
+	font-weight: 500 !important;
 }
 .bold {
-	font-family: "robotomedium";
+	font-weight: 500;
 }
 .regular {
-	font-family: "robotoregular";
+	font-weight: 400;
 }
 /* removed padding and margin of these because they gave overflow issues */
 .row,
@@ -110,7 +95,7 @@ nav {
 /* font styles */
 h2 {
 	font-size: 28px;
-	font-family: "robotomedium";
+	font-weight: 600;
 }
 
 .current-opportunities {
@@ -282,10 +267,12 @@ h2 {
 
 	.deskop-h1 {
 		padding-left: 6px;
+		width: 497px;
+		
 		font-weight: bold;
 		font-size: 52px;
 		line-height: 64px;
-		letter-spacing: -1.6px;
+		letter-spacing: -1px;
 		color: #333e48;
 		display: flex;
 		align-items: flex-end;
@@ -313,6 +300,7 @@ h2 {
 
 	.lead {
 		padding-left: 10px;
+		
 		color: #333e48;
 	}
 
@@ -329,7 +317,20 @@ h2 {
 		padding: 180px 0 0;
 	}
 	.cover-image-tab-desk {
-		background-image: url(../images/indie-cover.png);
+		background-image: url(../images/indie-cover.png);}
+
+	.cover-picture {
+		background-image: url(../images/Indie\Laughing\BG.svg);
+		position: relative;
+		width: 792px;
+		height: 748px;
+		left: -86px;
+		top: 124px;
+		overflow: hidden;
+	}
+
+	.cover-image-tab-desk {
+		background-image: url(../images/Indie\Laughing\BG.svg);
 		/* 	
         background-size: cover;
         height: 200px;
@@ -385,7 +386,6 @@ h2 {
 		height: 704px;
 		left: 50px;
 	}
-}
 
 @media (max-width: 767.98px) {
 	.desktop-cover,
