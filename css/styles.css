@@ -1,3 +1,7 @@
+.darkmode {
+	background-color: #000000e6 !important;
+	color: whitesmoke !important;
+}
 /* importing fonts */
 @font-face {
 	font-family: OpenDyslexic;
