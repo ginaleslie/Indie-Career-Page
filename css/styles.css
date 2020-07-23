@@ -92,6 +92,23 @@ nav {
 	background: #0075c9;
 	padding: 7px 22px;
 }
+.btn-primary1 {
+	
+	padding: 7px 22px;
+	background: #FFFFFF;
+border: 1px solid #615D5D;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.btn-primary1:before {
+	content: url(http://alexfeds.com/wp-content/uploads/2018/04/indeed.png);
+	width: 20px;
+	float: left;
+	margin-right: 5px;
+	margin-top: -2px;
+  }
+
 .btn-primary:hover {
 	background: #0270bf;
 }
