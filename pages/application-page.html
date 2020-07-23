@@ -19,7 +19,7 @@
 	</head>
 	<body class="container-fluid">
 		<nav class="navbar navbar-expand-md navbar-light shadow-sm">
-			<a href="../index.html" class="navbar-brand">
+			<a href="index.html" class="navbar-brand">
 				<img src="../images/logo.svg" alt="Sanlam Indie" />
 			</a>
 			<button
@@ -32,7 +32,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<div class="navbar-nav ml-auto mt-sm-0 mt-5">
+				<div class="navbar-nav ml-auto mt-sm">
 					<div class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
 							>Why Sanlam Indie</a
@@ -58,34 +58,6 @@
 				</div>
 			</div>
 		</nav>
-		<div id="form-popup">
-			<img
-				src="../images/confetti.svg"
-				alt="Confetti"
-				class="img-center bg-img"
-			/>
-			<div class="d-flex justify-content-center">
-				<div class="d-block text-white text-center width-small">
-					<img
-						src="../images/smiley.svg"
-						alt="Smiley face"
-						class="img-center"
-					/>
-					<h5 class="ml-4 ml-sm-0 mr-4 mr-sm-0 mt-5 mt-sm-5 mt-sm-0 bold">
-						Your application was successfully submitted!
-					</h5>
-					<h5 class="ml-4 ml-sm-0 mr-4 mr-sm-0 mt-5 mt-sm-5 mt-sm-0 pb-4">
-						Thank you for applying. We will contact you soon with further
-						details.
-					</h5>
-					<h5 class="mt-5">
-						<a class="text-white bold white-btn" href="./careers.html"
-							>Return to Career Page</a
-						>
-					</h5>
-				</div>
-			</div>
-		</div>
 		<div class="gradient-bg d-flex align-items-center justify-content-center">
 			<div class="d-block">
 				<h2
@@ -130,273 +102,115 @@
 		<div class="max-width">
 			<form class="needs-validation-1" id="form-1" novalidate>
 				<div class="form-row">
-					<div class="col-md-3 mb-3 p-0">
+					<div class="col-md-3 mb-3">
 						<h5 class="bold blue">Personal information</h5>
 						<p class="small-text-14 regular mr-4 brand-black">
 							Tell us something about yourself
 						</p>
 					</div>
-					<div class="col-md-9 mb-3 pl-0 pl-md-5">
+					<div class="col-md-9 mb-3 pl-2 pl-md-5">
 						<label
-							for="validationCustom01"
+							for="validationCustom02"
 							class="small-text-14 bold mr-4 brand-black"
-							>Full name <span class="text-danger regular">*</span></label
+							>Full name</label
 						>
 						<input
 							type="text"
 							class="form-control"
-							id="validationCustom01"
-							placeholder="Your full name"
+							id="validationCustom02"
+							placeholder="Last name"
 							required
 						/>
 						<div class="valid-feedback">
 							Looks good!
 						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="validationCustom03">City</label>
+						<input
+							type="text"
+							class="form-control"
+							id="validationCustom03"
+							placeholder="City"
+							required
+						/>
 						<div class="invalid-feedback">
-							Please provide a name.
-						</div>
-						<div class="mt-3">
-							<label
-								for="validationCustom02"
-								class="small-text-14 bold mr-4 brand-black"
-								>Email address <span class="text-danger regular">*</span></label
-							>
-							<input
-								type="email"
-								class="form-control"
-								id="validationCustom02"
-								placeholder="Your email address"
-								required
-							/>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback">
-								Please provide a valid email.
-							</div>
-						</div>
-						<div class="mt-3">
-							<label
-								for="validationCustom03"
-								class="small-text-14 bold mr-4 brand-black"
-								>Phone number <span class="text-danger regular">*</span></label
-							>
-							<input
-								type="text"
-								class="form-control"
-								id="validationCustom03"
-								placeholder="Your phone number"
-								required
-							/>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback">
-								Please enter a phone number.
-							</div>
-							<hr class="mt-5 mb-5 form-hr" />
+							Please provide a valid city.
 						</div>
 					</div>
-				</div>
-
-				<div class="form-row">
-					<div class="col-md-3 mb-md-3 mb-0 p-0">
-						<h5 class="bold blue">CV/Resume</h5>
-						<p class="small-text-14 regular mr-4 brand-black">
-							Upload your CV or resume file
-						</p>
-					</div>
-					<div class="col-md-9 mb-3 pl-0 pl-md-5">
-						<span class="fileUpload btn btn-block-md btn-upload blue"
-							>Add file</span
-						>
+					<div class="col-md-3 mb-3">
+						<label for="validationCustom04">State</label>
 						<input
-							type="file"
-							class="form-control upload"
+							type="text"
+							class="form-control"
 							id="validationCustom04"
-							name="file[]"
+							placeholder="State"
 							required
 						/>
-						<div class="valid-feedback">
-							Looks good!
+						<div class="invalid-feedback">
+							Please provide a valid state.
 						</div>
-						<div class="invalid-feedback relative-text">
-							Please provide a file.
-						</div>
-						<p class="small-text-14 mt-2 mb-2 text-secondary">
-							We accept PDF, DOC, DOCX, JPG and PNG files.
-						</p>
-						<p
-							class="rounded-pill pl-2 pr-2 pb-1 pt-1 bold small-text pill-small-warning btn mr-4"
-						>
-							<img
-								src="../images/warning.svg"
-								alt="warning"
-								class="pb-1 pr-1"
-							/>Max file size limit 3MB
-						</p>
-						<hr class="mt-4 mb-5 form-hr" />
 					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-3 mb-md-3 mb-0 p-0">
-						<h5 class="bold blue">Cover letter</h5>
-						<p class="small-text-14 regular mr-4 brand-black">
-							Insert your cover letter here
-						</p>
-					</div>
-					<div class="col-md-9 mb-3 pl-0 pl-md-5">
-						<span class="fileUpload btn btn-block-md btn-upload blue"
-							>Add file</span
-						>
+					<div class="col-md-3 mb-3">
+						<label for="validationCustom05">Zip</label>
 						<input
-							type="file"
-							class="form-control upload"
+							type="text"
+							class="form-control"
 							id="validationCustom05"
-							name="file[]"
+							placeholder="Zip"
 							required
 						/>
-						<div class="valid-feedback">
-							Looks good!
+						<div class="invalid-feedback">
+							Please provide a valid zip.
 						</div>
-						<div class="invalid-feedback relative-text">
-							Please provide a file.
-						</div>
-						<p class="small-text-14 mt-2 mb-2 text-secondary">
-							We accept PDF, DOC, DOCX, JPG and PNG files.
-						</p>
-						<p
-							class="rounded-pill pl-2 pr-2 pb-1 pt-1 bold small-text pill-small-warning btn mr-4"
-						>
-							<img
-								src="../images/warning.svg"
-								alt="warning"
-								class="pb-1 pr-1"
-							/>Max file size limit 3MB
-						</p>
-						<p class="small-text-14 mt-2 mb-2 text-secondary">
-							or
-						</p>
-						<textarea class="form-control-text mt-4 mb-5" rows="5"></textarea>
 					</div>
 				</div>
-				<div class="d-flex justify-content-center">
-					<button
-						class="btn btn-primary btn-block-md btn-sm text-center btn-next"
-						type="btn"
-						id="next"
-					>
-						Continue
-					</button>
+				<div class="form-group">
+					<div class="form-check">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value=""
+							id="invalidCheck"
+							required
+						/>
+						<label class="form-check-label" for="invalidCheck">
+							Agree to terms and conditions
+						</label>
+						<div class="invalid-feedback">
+							You must agree before submitting.
+						</div>
+					</div>
 				</div>
+				<button class="btn btn-primary btn-sm" type="btn" id="next">
+					Next
+				</button>
 			</form>
 			<form class="needs-validation-2" id="form-2" novalidate>
-				<div class="form-row">
-					<div class="col-md-3 mb-md-3 mb-0 p-0">
-						<h5 class="bold blue">Questions</h5>
-						<p class="small-text-14 regular mr-4 brand-black">
-							Please fill in additional questions
-						</p>
+				<div class="col-md-4 mb-3">
+					<label for="validationCustom06">First name</label>
+					<input
+						type="text"
+						class="form-control"
+						id="validationCustom06"
+						placeholder="First name"
+						required
+					/>
+					<div class="invalid-feedback">
+						Please provide a valid state.
 					</div>
-					<div class="col-md-9 mb-3 pl-0 pl-md-5">
-						<div class="mb-5">
-							<label
-								for="validationCustom06"
-								class="small-text-14 bold mr-4 brand-black"
-								>What excites you most about Sanlam Indie?
-								<span class="text-danger regular">*</span></label
-							>
-							<textarea
-								class="form-control mt-1"
-								rows="5"
-								id="validationCustom06"
-								required
-							></textarea>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback relative-text">
-								Please do not leave empty.
-							</div>
-						</div>
-						<div class="mb-5">
-							<label
-								for="validationCustom07"
-								class="small-text-14 bold mr-4 brand-black"
-								>What excites you about this role?
-								<span class="text-danger regular">*</span></label
-							>
-							<textarea
-								class="form-control mt-1"
-								rows="5"
-								id="validationCustom07"
-								required
-							></textarea>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback relative-text">
-								Please do not leave empty.
-							</div>
-						</div>
-						<div class="mb-5">
-							<label
-								for="validationCustom08"
-								class="small-text-14 bold mr-4 brand-black"
-								>When was the last time you had to work on a problem that was
-								unfamiliar to you? How did you go about learning about that
-								area? <span class="text-danger regular">*</span></label
-							>
-							<textarea
-								class="form-control mt-1"
-								rows="5"
-								id="validationCustom08"
-								required
-							></textarea>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback relative-text">
-								Please do not leave empty.
-							</div>
-						</div>
-						<div class="mb-5">
-							<label
-								for="validationCustom09"
-								class="small-text-14 bold mr-4 brand-black"
-								>What books have you read most recently?<span
-									class="text-danger regular"
-									>*</span
-								></label
-							>
-							<textarea
-								class="form-control mt-1"
-								rows="5"
-								id="validationCustom09"
-								required
-							></textarea>
-							<div class="valid-feedback">
-								Looks good!
-							</div>
-							<div class="invalid-feedback relative-text">
-								Please do not leave empty.
-							</div>
-						</div>
+					<div class="valid-feedback">
+						Looks good!
 					</div>
 				</div>
 
-				<div class="d-flex justify-content-center">
-					<button
-						class="btn btn-primary btn-block-md btn-sm text-center btn-next"
-						type="btn"
-						id="next"
-					>
-						Submit
-					</button>
-				</div>
+				<button class="btn btn-primary btn-sm" type="submit">
+					Submit form
+				</button>
 			</form>
 		</div>
-
 		<footer>
 			<div class="row">
 				<div
