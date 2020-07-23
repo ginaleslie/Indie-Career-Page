@@ -792,6 +792,12 @@ a:hover {
 	.bg-grey-mobile {
 		background: #e5e5e5;
 	}
+	.hide-cover {
+		display: none;
+	}
+	.breadcrumb-item {
+		font-size: 13px;
+	}
 }
 @media only screen and (max-width: 375px) {
 	.width-100 {
@@ -899,4 +905,17 @@ a:hover {
 }
 .padding-100 {
 	padding-top: 130px;
+}
+.bg-aqua-gradient {
+	background-image: linear-gradient(
+		rgb(10, 124, 200) 0%,
+		rgb(99, 181, 185) 100%
+	);
+	z-index: -1;
+}
+.bg-neutral {
+	background: rgb(243, 245, 248);
+}
+.hide-toggle {
+	display: none;
 }

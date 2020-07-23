@@ -5,12 +5,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sanlam Indie</title>
 		<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+		rel="stylesheet"
+	/>
+		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
 		<link id="theme" rel="stylesheet" type="text/css" href="./css/styles.css" />
+	
 		<style>
 			body,
 			.container-fluid {
@@ -22,7 +35,7 @@
 	<div class="fabs">
 		<img src="./images/chatBot-button.svg" alt="">
 	</div>
-	<body class="container-fluid">
+	<body class="container-fluid" id="changeFont">
 		<nav class="navbar navbar-expand-md navbar-light shadow-sm">
 			<a href="#" class="navbar-brand">
 				<img src="./images/logo.svg" alt="Sanlam Indie" />
@@ -51,106 +64,344 @@
 					<a href="#" class="nav-item nav-link">Help</a>
 					<a href="#" class="nav-item nav-link">Learn</a>
 					<a href="#" class="nav-item nav-link">Blog</a>
-					<a href="#" class="nav-item nav-link active">Career</a
-					><a href="#" class="nav-item nav-link">Contact</a>
+					<a href="./pages/careers.html" class="nav-item nav-link "
+						>Career</a
+					><a href="./pages/careers.html" class="nav-item nav-link">Contact</a>
 				</div>
+				
 				<div class="navbar-nav ml-auto">
 					<a href="./pages/settings.html" class="">
 						<button type="button" class="btn btn-primary btn-navbar">
 							Settings
-						</button></a
-					>
+						</button>
+					</a>
 				</div>
 			</div>
 		</nav>
+		<!--chatbot-->
+		<div class="fabs">
+			<img src="./images/chatBot-button.svg" alt="chat bot icon" />
+		</div>
 
-		<footer>
-			<div class="row">
-				<div
-					class="col-12 col-sm-6 col-md-4 p-md-5 p-sm-5 p-5 bg-dark-blue text-white"
-				>
-					<div class="mt-3 mt-md-5 mt-sm-4">
-						<h2 class="pt-md-9 pt-sm-9 pt-9">We're on a mission.</h2>
-						<p class="pt-md-3 pt-sm-3 pt-3">
-							At Sanlam Indie, we're using cutting-edge technology to transform
-							the industry and deliver financial services that actually work for
-							you.
-						</p>
+		<div class="container-fluid">
 
-						<p>
-							No jargon. No messy paperwork. Just world-class products that are
-							simple to use, easy to understand, and incredibly rewarding -
-							allowing more ways for you to create and protect wealth.
-						</p>
+			<!--mobile-->
+			<div class="mobile-view">
+				<div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6  p-lg-5 p-md-2 mt-md-3 mt-5">
+							<div class="mt-5 pt-3  mt-md-2 pt-md-2 mt-lg-5 pt-lg-3">
+								<strong class="blue bold pl-2 ">SANLAM INDIE</strong>
+								<h1 class="deskop-h1 bold">Life Insurance 
+									that creates 
+									wealth.</h1>
+								<p class="lead pr-md-5 pr-1 lead pb-5 pb-md-2">Only Sanlam Indie gives you an investment with your life insurance policy at no extra cost.
+								</p> 
+								<div class="row">
+									<div class="col-md-6 p-0 p-md-2">
+										<button
+										class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4"
+										type="submit">
+										Get Started
+										</button>
+									</div>   
+									<div class="col-md-6 p-0 p-md-2">
+										<button
+										class="btn btn-outline-dark btn-lg btn-block font-16  pl-2 mb-md-0 mb-4"
+										type="submit">
+										<img src="./images/android phone.svg" alt="Android phone icon" class="pr-2 pb-1">Let us contact you
+										</button>
+									</div></div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-md-6   mt-5 desktop-picture">
+							<img
+								style="width: 100%;"
+								src="./images/IndieLaughingBG.png"
+								alt="Image of a man with glasses laughing." class="hide-cover"
+							/>
+						</div>
 					</div>
+
+					<div class="row  pt-md-5 pb-md-5 mt-md-5 mt-2">
+						
+							<div class="col-12 col-sm-8 col-lg-6 order-lg-2 p-lg-6 pt-3 p-md-3 mt-3 align-items-lg-center" >
+								<strong class="blue">WEALTH BONUS</strong>
+								<h5 class="font-28 bold text-left pb-2 mt-2 mt-md-0 pr-5">Insure your life, and Sanlam Indie will invest in you.</h5>
+								<p class="mt-3 pl-0 pr-md-5 pr-1 lead">
+									We match up to 100% of your life insurance premium and invest it
+									for you at no extra cost. Every premium you pay helps create
+									wealth for your future.
+								</p>
+								<button
+									class="col-md-5 btn btn-block blue-button text-center small-text"
+									type="button">
+									About Wealth Bonus
+								</button>
+							</div>
+							<div class="col-12 col-lg-6 order-lg-1 text-center mt-3">
+								<img
+									src="./images/wealthbonus-t.png"
+									alt="Graphic illustrating the building of wealth over time. "
+									style="max-width: 90%;"
+								/>
+							</div>
+					</div>
+
+					<div class="row bg-neutral mt-md-5 pt-md-9 align-items-lg-center">
+						<div class="col-12 col-sm-8 col-lg-6 order-lg-4 p-lg-6 pt-5 p-md-3 mt-3">
+							<strong class="blue">PRODUCTS</strong>
+							<h5 class="font-28 bold text-left pb-2 mt-2 mt-md-0 pr-5">Simpler, smarter, more rewarding cover.</h5>
+							<p class="mt-3 pl-0 pr-md-5 pr-1 lead">
+								We think life insurance should be more about living. So we’ve
+								designed our products to protect and create wealth while you’re
+								still alive.
+							</p>
+							<button
+							class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4 col-md-5 col-12"
+							type="submit">
+							View our products
+							</button>
+						</div>
+						<div class="col-12 col-lg-6 order-lg-3 text-center mt-3 p-3">
+							<img
+							src="./images/products.svg"
+							style="max-width: 90%;"
+						/>
+						</div>
+					</div>
+
+					<div class="row mt-md-5 pt-md-9 p-lg-5 pt-4">
+						<div class="col-12 text-center pt-3 align-items-lg-center">
+							<strong class="blue-uppercase">Why Sanlam Indie</strong>
+							<h5 class="font-28 bold pb-2 mt-2 mb-4 ">
+								Built from the ground up for the  internet <br/>generation
+							</h5>
+							<p class="lead pb-5 mb-3 pr-md-5 pr-1 lead">Sanlam Indie is a digital-first insurer, using technology to make Life Insurance simpler, smarter and more rewarding.</p>
+						</div>
+						<div class="col-12 col-md-4 pt-2 align-items-lg-center">
+							<div>
+								<img src="./images/time-2.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									Do everything online in no time.
+								</h5>
+								<p>
+									Get quoted and covered in under 10 minutes online. No paperwork
+									or waiting.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pt-2">
+							<div>
+								<img src="./images/safe.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									Don’t just get insured, create wealth.
+								</h5>
+								<p>
+									Every Sanlam Indie policy has a built-in Wealth Bonus, and we
+									contribute to it every time you pay your premium.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pt-2">
+							<div>
+								<img src="./images/time.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									You’re covered instantly with Sanlam Indie.
+								</h5>
+								<p>
+									Buy your insurance online and get instant cover, before you’ve
+									even paid for it.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pt-2">
+							<div>
+								<img src="./images/middleman.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									Better technology gives you better value.
+								</h5>
+								<p>
+									We’ve eliminated old analogue processes with state-of-the-art
+									tech that works better and costs you less.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pt-2">
+							<div>
+								<img src="./images/price.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									Better insurance, at the best possible price.
+								</h5>
+								<p>
+									We use state-of-the-art technology to give you a more accurate
+									premium, with lower premiums if you’re lower risk.
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pt-2">
+							<div>
+								<img src="./images/cal.svg" height="28" alt="" />
+								<br />
+								<h5 class="pt-2">
+									Skip premiums. For when life happens.
+								</h5>
+								<p>
+									Sanlam indie lets you proactively skip premiums without losing
+									cover or reducing your Wealth Bonus.
+								</p>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-				<div
-					class="col-12 col-sm-6 col-md-8 p-md-5 p-sm-5 p-5 bg-light-blue text-white"
-				>
-					<div class="row mt-3 mt-sm-5">
-						<div class="col-6 col-md-3 no-style-list">
-							<li class="bold">Our Products</li>
-							<li class="pt-2">Funeral Cover</li>
-							<li class="pt-2">Life Cover</li>
-							<li class="pt-2">Critical Illness Cover</li>
-							<li class="pt-2">Income Protection</li>
-							<li class="pt-2">Disability Cover</li>
-							<li class="pt-2">Death Income Cover</li>
-							<li class="pt-2">Sanlam Indie Plan</li>
-						</div>
-						<div class="col-6 col-md-3 no-style-list">
-							<li class="bold">Wealth Bonus</li>
-							<li class="pt-2">What’s a Wealth Bonus?</li>
-						</div>
-						<div class="col-6 col-md-3 mt-4 mt-sm-0 no-style-list">
-							<li class="bold">Company</li>
-							<li class="pt-2">About Sanlam Indie</li>
-							<li class="pt-2">Dashboard Log in</li>
-							<li class="pt-2">Contact</li>
-							<li class="pt-2">Funeral Cover</li>
-						</div>
-						<div class="col-6 col-md-3 mt-4 mt-sm-0 no-style-list">
-							<li class="bold">Resources</li>
-							<li class="pt-2">Help</li>
-							<li class="pt-2">Learn</li>
-							<li class="pt-2">Blog</li>
-							<li class="pt-2">Claims</li>
-							<li class="pt-2">Complaints</li>
-						</div>
+				<div class="row mt-md-5 pt-md-9 pt-lg-5 pr-lg-5 pl-lg-5 pt-4 pb-0 bg-neutral">	
+					<div class="col-12 col-sm-8 col-lg-6 order-lg-5 p-lg-6 pt-3 p-md-3 mt-3">
+						<strong class="blue">SUPPORT</strong>
+						<h5 class="font-28 bold pb-2 mt-2 mb-4 ">Friendly and helpful support when you need it.</h5>
+						<p class="mt-3 lead pl-0">
+							Insurance is a tricky subject, but with Sanlam Indie, help is
+							always at hand. Check out our Help Centre, get qualified
+							assistance through live chat, or email us.
+						</p>
+						
 					</div>
-					<div class="row p-3 mt-2">
+					<div class="col-12 col-lg-6 order-lg-6 text-center mt-3">
 						<img
-							src="./images/logo-white.svg"
-							alt="Sanlam Indie"
-							class="mt-3"
+							src="./images/support-m.png"
+							alt="Illustration of a mobile device with a conversation thread."
+							style="max-width: 90%;"
 						/>
 					</div>
-					<div class="row pl-3 pt-2 d-flex align-items-center">
-						<img src="./images/youtube.svg" alt="Youtube" class="mr-4" />
-						<img
-							src="./images/instagram.svg"
-							alt="Instagram"
-							class="mr-4"
-						/><img src="./images/facebook.svg" alt="Facebook" class="mr-4" />
-						<img src="./images/twitter.svg" alt="Twitter" class="mr-3" />
-						<img src="./images/linkedin.svg" alt="linkedIn" />
-					</div>
-					<div class="row p-3 mt-2">
-						<p class="small-text">
-							Copyright © Sanlam Indie 2020. All Rights Reserved. Sanlam Indie's
-							product offering is underwritten by Sanlam Life Insurance Limited,
-							a registered long-term insurer. Sanlam Indie is a division of
-							Sanlam Life Insurance Limited - Reg No. 1998/021121/06. Sanlam
-							Life Insurance Limited is an authorised FSP (No. 2759). Address:
-							Tygerpark 5, 2nd Floor, Tyger Valley, Bellville Park, Cape Town,
-							7530, South Africa.
-							<span class="bold">Privacy | Terms of Use</span>
-						</p>
+				</div>
+
+				<div class="row bg-aqua-gradient text-white">	
+					<div class="row p-md-5 p-0 pb-5 pt-5">
+						<div class="col-12  col-md-6 order-lg-4 mt-3 ">
+							<h2 class="pt-2 pl-md-5 pl-0">Get life insurance.<br />Get a Wealth Bonus. <br />Get living.</h2>
+						</div>
+						<div class="col-12 col-md-6 order-lg-8 text-center mt-3">
+							<div class="row">
+								<p class="mt-3 lead text-white text-left pb-3">
+									Only Sanlam Indie gives you an investment that creates wealth
+									while you insure yourself...
+								</p>
+							
+							</div>
+							<div class="row">
+								<div class="col-md-6 p-0 p-md-2">
+									<button
+									class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4 "
+									type="submit">
+									Get Started
+									</button>
+								</div>   
+								<div class="col-md-6 p-0 p-md-2">
+									<button
+									class="btn btn-outline-dark btn-lg btn-block font-16  pl-2 text-white border-white mb-md-0 mb-4"
+									type="submit">
+									<img src="./images/android phone white.svg" alt="Android phone icon" class="pr-2 pb-1 ">Let us contact you
+									</button>
+								</div></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+
+			<footer>
+                <div class="row">
+                    <div
+                        class="col-12 col-md-6 col-lg-4 p-md-5 p-sm-5 p-5 bg-dark-blue text-white"
+                    >
+                        <div class="mt-3 mt-md-5 mt-sm-4">
+                            <h2 class="pt-md-9 pt-sm-9 pt-9">We're on a mission.</h2>
+                            <p class="pt-md-3 pt-sm-3 pt-3">
+                                At Sanlam Indie, we're using cutting-edge technology to transform
+                                the industry and deliver financial services that actually work for
+                                you.
+                            </p>
+    
+                            <p>
+                                No jargon. No messy paperwork. Just world-class products that are
+                                simple to use, easy to understand, and incredibly rewarding -
+                                allowing more ways for you to create and protect wealth.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-8 p-md-5 p-sm-5 p-5 bg-light-blue text-white"
+                    >
+                        <div class="row mt-3 mt-sm-5">
+                            <div class="col-6 col-md-6  col-lg-3 no-style-list">
+                                <li class="bold">Our Products</li>
+                                <li class="pt-2">Funeral Cover</li>
+                                <li class="pt-2">Life Cover</li>
+                                <li class="pt-2">Critical Illness Cover</li>
+                                <li class="pt-2">Income Protection</li>
+                                <li class="pt-2">Disability Cover</li>
+                                <li class="pt-2">Death Income Cover</li>
+                                <li class="pt-2">Sanlam Indie Plan</li>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-3 no-style-list">
+                                <li class="bold">Wealth Bonus</li>
+                                <li class="pt-2">What’s a Wealth Bonus?</li>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-3  mt-4 mt-md-4 mt-lg-0 no-style-list">
+                                <li class="bold">Company</li>
+                                <li class="pt-2">About Sanlam Indie</li>
+                                <li class="pt-2">Dashboard Log in</li>
+                                <li class="pt-2">Contact</li>
+                                <li class="pt-2">Funeral Cover</li>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 no-style-list">
+                                <li class="bold">Resources</li>
+                                <li class="pt-2">Help</li>
+                                <li class="pt-2">Learn</li>
+                                <li class="pt-2">Blog</li>
+                                <li class="pt-2">Claims</li>
+                                <li class="pt-2">Complaints</li>
+                            </div>
+                        </div>
+                        <div class="row p-3 mt-2">
+                            <img
+                                src="./images/logo-white.svg"
+                                alt="Sanlam Indie"
+                                class="mt-3"
+                            />
+                        </div>
+                        <div class="row pl-3 pt-2 d-flex align-items-center">
+                            <img src="./images/youtube.svg" alt="Youtube" class="mr-4" />
+                            <img
+                                src="./images/instagram.svg"
+                                alt="Instagram"
+                                class="mr-4"
+                            /><img src="./images/facebook.svg" alt="Facebook" class="mr-4" />
+                            <img src="./images/twitter.svg" alt="Twitter" class="mr-3" />
+                            <img src="./images/linkedin.svg" alt="linkedIn" />
+                        </div>
+                        <div class="row p-3 mt-2">
+                            <p class="small-text " >
+                                Copyright © Sanlam Indie 2020. All Rights Reserved. Sanlam Indie's
+                                product offering is underwritten by Sanlam Life Insurance Limited,
+                                a registered long-term insurer. Sanlam Indie is a division of
+                                Sanlam Life Insurance Limited - Reg No. 1998/021121/06. Sanlam
+                                Life Insurance Limited is an authorised FSP (No. 2759). Address:
+                                Tygerpark 5, 2nd Floor, Tyger Valley, Bellville Park, Cape Town,
+                                7530, South Africa.
+                                <span class="bold">Privacy | Terms of Use</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div id="dys-toggle" class="hide-toggle"></div>
 	</body>
+	<script src="./js/darkmode.js"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

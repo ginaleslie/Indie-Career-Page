@@ -31,9 +31,9 @@
 			}
 		</style>
     </head>
-	<body>
+	<body id="changeFont">
 		<nav class="navbar navbar-expand-md navbar-light shadow-sm">
-			<a href="index.html" class="navbar-brand active">
+			<a href="../index.html" class="navbar-brand active">
 				<img src="../images/logo.svg" height="28" alt="Sanlam Indie" />
 			</a>
 			<button
@@ -64,7 +64,7 @@
 					><a href="#" class="nav-item nav-link">Contact</a>
 				</div>
 				<div class="navbar-nav ml-auto">
-					<a href="./pages/settings.html" class="">
+					<a href="../pages/settings.html" class="">
 						<button type="button" class="btn btn-primary btn-navbar">
 							Settings
 						</button></a
@@ -80,41 +80,41 @@
         
 		<div class="container-fluid">
                 <div class="desktop-cover">
-                    <div class="padding-style">
-                    <div class="row ">
+                    <div class="row">
+						<div class="col-sm-12 col-md-6  p-lg-5 p-md-2 mt-md-3 mt-5">
+							<div class="mt-5 pt-3  mt-md-2 pt-md-2 mt-lg-5 pt-lg-3">
+							
+								<h1 class="deskop-h1 bold">We go further together than we could ever go alone.
+                                </h1>
+								<p class="lead pr-md-5 pr-1 lead pb-5 pb-md-2">As we grow, our processes and strategies may change, but our values will remain the same. We belive in working better together.
 
-                        <div class="col-md-6 col-sm-7">
-                            <div class="desktop-title">
-                            <h1 class="deskop-h1 bold">We go further together than we could ever go alone.</h1>
-                            <p class="lead">As we grow, our processes and strategies may change, 
-                                but our values will remain the same. We belive in 
-                                working better together
-                            </p> 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <button
-                                    class="btn btn-lg btn-block current-opportunities"
-                                    type="submit">
-                                    Current Opportunities
-                                    </button>
-                                </div>   
-                                <div class="col-md-6">
-                                    <button
-                                    class="btn btn-outline-dark btn-lg btn-block font-16"
-                                    type="submit">
-                                    Graduates
-                                    </button>
-                                </div></div>
-                            </div>
-                        </div>
-                     
-                        <div class="col-md-6  col-sm-5 m-0 p-0">
-                            
-                            <img src="../images/indie-cover.png" class="responsive-img">
-                        </div>
-                        </div>
-                            
-                     </div>
+								</p> 
+								<div class="row">
+									<div class="col-md-6 p-0 p-md-2">
+                                        <a href="../pages/vacancy-options.html">
+										<button
+										class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4"
+										type="submit">
+										Current opportunities
+										</button></a>
+									</div>   
+									<div class="col-md-6 p-0 p-md-2">
+										<button
+										class="btn btn-outline-dark btn-lg btn-block font-16  pl-2 mb-md-0 mb-4"
+										type="submit">
+									Graduates
+										</button>
+									</div></div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-md-6   mt-5 desktop-picture mb-0 d-flex align-items-end">
+							<img
+								style="width: 100%;"
+								src="../images/indie-cover.png"
+								alt="Image of a man with glasses laughing." class="hide-cover pt-md-5"
+							/>
+						</div>
+					</div>
                 </div>
                 <div class="bg-gradient mb-5">
 					<img src="../images/bg-mobile.svg" alt="background image" class="bg-img-career">
@@ -461,7 +461,7 @@
                             <img src="../images/linkedin.svg" alt="linkedIn" />
                         </div>
                         <div class="row p-3 mt-2">
-                            <p class="small-text">
+                            <p class="small-text " >
                                 Copyright © Sanlam Indie 2020. All Rights Reserved. Sanlam Indie's
                                 product offering is underwritten by Sanlam Life Insurance Limited,
                                 a registered long-term insurer. Sanlam Indie is a division of
@@ -475,6 +475,7 @@
                     </div>
                 </div>
             </footer>
+            <div id="dys-toggle" class="hide-toggle"></div>
 		</div>
 	</body>
 	<script
@@ -491,5 +492,5 @@
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"
-	></script>
+	></script><script src="../js/main.js"></script>
 </html>

@@ -13,9 +13,7 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
 		<link
 			id="theme"
 			rel="stylesheet"
@@ -23,9 +21,9 @@
 			href="../css/styles.css"
 		/>
 	</head>
-	<body class="container-fluid">
+	<body class="container-fluid" id="changeFont">
 		<nav class="navbar navbar-expand-md navbar-light shadow-sm">
-			<a href="#" class="navbar-brand">
+			<a href="../index.html" class="navbar-brand">
 				<img src="../images/logo.svg" alt="Sanlam Indie" />
 			</a>
 			<button
@@ -52,11 +50,11 @@
 					<a href="#" class="nav-item nav-link">Help</a>
 					<a href="#" class="nav-item nav-link">Learn</a>
 					<a href="#" class="nav-item nav-link">Blog</a>
-					<a href="../index.html" class="nav-item nav-link">Career</a
+					<a href="./careers.html" class="nav-item nav-link active">Career</a
 					><a href="#" class="nav-item nav-link">Contact</a>
 				</div>
 				<div class="navbar-nav ml-auto">
-					<a href="#" class="">
+					<a href="./settings.html" class="">
 						<button type="button" class="btn btn-primary btn-navbar">
 							Settings
 						</button></a
@@ -66,7 +64,7 @@
 			</div>
         </nav>
         
-        <body>
+      
             <div class="gradient-bg d-flex align-items-center justify-content-center">
                 <div class="d-block">
                     <h2
@@ -105,51 +103,57 @@
                             />Full-Time
                         </p>
                     </div>
-                    <hr class="mobile-hr mt-4" />
+                  
                 </div>
             </div>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Options</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Vacancy</li>
-                </ol>
-              </nav>
+			<nav aria-label="breadcrumb" class="mb-0 pb-0 pt-3 pt-md-0 mt-0">
+				<ol class="breadcrumb pb-2 ">
+					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+					<li class="breadcrumb-item">
+						<a href="../pages/careers.html">Career</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a href="../pages/vacancy-options.html">Job opportunities</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page">
+						Description
+					</li>
+				</ol>
+			</nav>
 <!-- blue button -->
-<br>
-<br>
-         <div class="d-flex flex-row-reverse"> 
-              <button
-            class="btn btn-primary1 btn-block-sm btn-sm text-center btn-next"
-            type="btn"
-            id="next"
-        >
-    Apply with Indeed
-</button>
+<div class="max-width-nm">
+	<div class="row d-flex justify-content-end">
+	<div class="col-md-3 p-0 p-md-2">
+		<a href="./application-page.html">
+		<button
+		class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4"
+		type="submit">
+		Apply now
+		</button>
+	</a>
+	</div>   
+	<div class="col-md-3 p-0 p-md-2">
 
-<br></br>
-<button
-            class="btn btn-primary btn-block-sm btn-sm text-center btn-next"
-            type="btn"
-            id="next"
-        >
-    Apply Now
-</button>
-</div>
+		<button
+		class="btn btn-outline-dark btn-lg btn-block font-16  pl-2 mb-md-0 mb-4"
+		type="submit">
+		<img src="../images/Group 45.svg" alt="Android phone icon" class="pr-2 pb-1">Apply with Indeed
+		</button>
+	</div></div>
 
             
 
             <br>
             <br>
 
-            <h1 class="vacancy-ltext">Job Description</h1>
-            <p class="vacancy-text">
+            <h1 class="vacancy-ltext font-28 ">Job Description</h1>
+            <p class="vacancy-text pb-4">
                 We're looking for a senior back end engineer to join the team at Sanlam Indie. Indie looks, feels and 
                 works like a startup, but has the backing and 
                 expertise of a leading South African insurance and investment giant - Sanlam.
             </p>
-            <h1 class="vacancy-ltext">Roles and Responsibilities</h1>
-            <ul>
+            <h1 class="vacancy-ltext font-28">Roles and Responsibilities</h1>
+            <ul class="pb-4">
                 <li class="vacancy-text">Be part of the team working and building on our core insurance platform.</li>
                 <li class="vacancy-text">Expand on our existing NodeJS-driven APIs and create new ones as our 
                     product suite and third-party integrations expand.</li>
@@ -164,130 +168,140 @@
               </ul>
     
     
-            <h1 class="vacancy-ltext">Our Ideal Candidate</h1>
+            <h1 class="vacancy-ltext font-28">Our Ideal Candidate</h1>
             <p class="vacancy-text">We'd love to meet you if you have are/are:</p>
-            <ul>
+            <ul class="pb-4">
                 <li class="vacancy-text">You are proficient in JavaScript, Node and have experience in front-end frameworks like React.</li>
                 <li class="vacancy-text">You have the ability to work on your own, sometimes spearheading a new direction with minimal guidance.</li>
-                <li class="vacancy-text">Strong understanding of development standards, patterns and practices./li>
+                <li class="vacancy-text">Strong understanding of development standards, patterns and practices.</li>
                 <li class="vacancy-text">Experience deploying apps in AWS or similar cloud infrastructure.</li>
-                <li class="vacancy-text">Knowledgeable and enthusiastic about writing well-tested applications./li>
-                <li class="vacancy-text">Experience integrating with third-party APIs and Web Services./li>
-                <li class="vacancy-text">A passion for learning, and for sharing what you learn./li>
+                <li class="vacancy-text">Knowledgeable and enthusiastic about writing well-tested applications.</li>
+                <li class="vacancy-text">Experience integrating with third-party APIs and Web Services.</li>
+                <li class="vacancy-text">A passion for learning, and for sharing what you learn.</li>
                 
             </ul>
             
 <br>
-<div class="d-flex flex-row"> <button
-    class="btn btn-primary btn-block-sm btn-sm text-center btn-next"
-    type="btn"
-    id="next"
->
-Apply Now
-</button>
-</div>
+<div class="row d-flex ">
+	<div class="col-md-3 p-0 p-md-2">
+		<a href="./application-page.html">
+		<button
+		class="btn btn-lg btn-block current-opportunities mb-md-0 mb-4"
+		type="submit">
+		Apply now
+		</button>
+	</a>
+	</div>   
+	<div class="col-md-3 p-0 p-md-2">
+		<button
+		class="btn btn-outline-dark btn-lg btn-block font-16  pl-2 mb-md-0 mb-4"
+		type="submit">
+		<img src="../images/Group 45.svg" alt="Android phone icon" class="pr-2 pb-1">Apply with Indeed
+		</button>
+	</div></div>
                 
                 <br>
 
                 <div class="row pl-3 pt-2 d-flex align-items-center">
-                    <img src="../images/Share.png" alt="Share link" class="mr-4" />
+                    <img src="../images/Share.svg" alt="Share link" class="mr-4" />
                     <img
-                        src="../images/facebook.png"
+                        src="../images/facebook-2.svg"
                         alt="Facebook"
                         class="mr-4"/>
-                        <img src="../images/linkedin.png" alt="linkedIn" class="mr-4" />
-                    <img src="../images/Mask.png" alt="Twitter" class="mr-3" />
+                        <img src="../images/linkedin-2.svg" alt="linkedIn" class="mr-4" />
+                    <img src="../images/twitter-2.svg" alt="Twitter" class="mr-3" />
                     
                 </div>
-                
-    </body>
+			</div>
+		</div>
 <br>
-		<footer>
-			<div class="row">
-				<div
-					class="col-12 col-sm-6 col-md-4 p-md-5 p-sm-5 p-5 bg-dark-blue text-white"
-				>
-					<div class="mt-3 mt-md-5 mt-sm-4">
-						<h2 class="pt-md-9 pt-sm-9 pt-9">We're on a mission.</h2>
-						<p class="pt-md-3 pt-sm-3 pt-3">
-							At Sanlam Indie, we're using cutting-edge technology to transform
-							the industry and deliver financial services that actually work for
-							you.
-						</p>
+<footer>
+	<div class="row">
+		<div
+			class="col-12 col-md-6 col-lg-4 p-md-5 p-sm-5 p-5 bg-dark-blue text-white"
+		>
+			<div class="mt-3 mt-md-5 mt-sm-4">
+				<h2 class="pt-md-9 pt-sm-9 pt-9">We're on a mission.</h2>
+				<p class="pt-md-3 pt-sm-3 pt-3">
+					At Sanlam Indie, we're using cutting-edge technology to transform
+					the industry and deliver financial services that actually work for
+					you.
+				</p>
 
-						<p>
-							No jargon. No messy paperwork. Just world-class products that are
-							simple to use, easy to understand, and incredibly rewarding -
-							allowing more ways for you to create and protect wealth.
-						</p>
-					</div>
+				<p>
+					No jargon. No messy paperwork. Just world-class products that are
+					simple to use, easy to understand, and incredibly rewarding -
+					allowing more ways for you to create and protect wealth.
+				</p>
+			</div>
+		</div>
+		<div
+			class="col-12 col-md-6 col-lg-8 p-md-5 p-sm-5 p-5 bg-light-blue text-white"
+		>
+			<div class="row mt-3 mt-sm-5">
+				<div class="col-6 col-md-6  col-lg-3 no-style-list">
+					<li class="bold">Our Products</li>
+					<li class="pt-2">Funeral Cover</li>
+					<li class="pt-2">Life Cover</li>
+					<li class="pt-2">Critical Illness Cover</li>
+					<li class="pt-2">Income Protection</li>
+					<li class="pt-2">Disability Cover</li>
+					<li class="pt-2">Death Income Cover</li>
+					<li class="pt-2">Sanlam Indie Plan</li>
 				</div>
-				<div
-					class="col-12 col-sm-6 col-md-8 p-md-5 p-sm-5 p-5 bg-light-blue text-white"
-				>
-					<div class="row mt-3 mt-sm-5">
-						<div class="col-6 col-md-3 no-style-list">
-							<li class="bold">Our Products</li>
-							<li class="pt-2">Funeral Cover</li>
-							<li class="pt-2">Life Cover</li>
-							<li class="pt-2">Critical Illness Cover</li>
-							<li class="pt-2">Income Protection</li>
-							<li class="pt-2">Disability Cover</li>
-							<li class="pt-2">Death Income Cover</li>
-							<li class="pt-2">Sanlam Indie Plan</li>
-						</div>
-						<div class="col-6 col-md-3 no-style-list">
-							<li class="bold">Wealth Bonus</li>
-							<li class="pt-2">What’s a Wealth Bonus?</li>
-						</div>
-						<div class="col-6 col-md-3 mt-4 mt-sm-0 no-style-list">
-							<li class="bold">Company</li>
-							<li class="pt-2">About Sanlam Indie</li>
-							<li class="pt-2">Dashboard Log in</li>
-							<li class="pt-2">Contact</li>
-							<li class="pt-2">Funeral Cover</li>
-						</div>
-						<div class="col-6 col-md-3 mt-4 mt-sm-0 no-style-list">
-							<li class="bold">Resources</li>
-							<li class="pt-2">Help</li>
-							<li class="pt-2">Learn</li>
-							<li class="pt-2">Blog</li>
-							<li class="pt-2">Claims</li>
-							<li class="pt-2">Complaints</li>
-						</div>
-					</div>
-					<div class="row p-3 mt-2">
-						<img
-							src="../images/logo-white.svg"
-							alt="Sanlam Indie"
-							class="mt-3"
-						/>
-					</div>
-					<div class="row pl-3 pt-2 d-flex align-items-center">
-						<img src="../images/youtube.svg" alt="Youtube" class="mr-4" />
-						<img
-							src="../images/instagram.svg"
-							alt="Instagram"
-							class="mr-4"
-						/><img src="../images/facebook.svg" alt="Facebook" class="mr-4" />
-						<img src="../images/twitter.svg" alt="Twitter" class="mr-3" />
-						<img src="../images/linkedin.svg" alt="linkedIn" />
-					</div>
-					<div class="row p-3 mt-2">
-						<p class="small-text">
-							Copyright © Sanlam Indie 2020. All Rights Reserved. Sanlam Indie's
-							product offering is underwritten by Sanlam Life Insurance Limited,
-							a registered long-term insurer. Sanlam Indie is a division of
-							Sanlam Life Insurance Limited - Reg No. 1998/021121/06. Sanlam
-							Life Insurance Limited is an authorised FSP (No. 2759). Address:
-							Tygerpark 5, 2nd Floor, Tyger Valley, Bellville Park, Cape Town,
-							7530, South Africa.
-							<span class="bold">Privacy | Terms of Use</span>
-						</p>
-					</div>
+				<div class="col-6 col-md-6 col-lg-3 no-style-list">
+					<li class="bold">Wealth Bonus</li>
+					<li class="pt-2">What’s a Wealth Bonus?</li>
+				</div>
+				<div class="col-6 col-md-6 col-lg-3  mt-4 mt-md-4 mt-lg-0 no-style-list">
+					<li class="bold">Company</li>
+					<li class="pt-2">About Sanlam Indie</li>
+					<li class="pt-2">Dashboard Log in</li>
+					<li class="pt-2">Contact</li>
+					<li class="pt-2">Funeral Cover</li>
+				</div>
+				<div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 no-style-list">
+					<li class="bold">Resources</li>
+					<li class="pt-2">Help</li>
+					<li class="pt-2">Learn</li>
+					<li class="pt-2">Blog</li>
+					<li class="pt-2">Claims</li>
+					<li class="pt-2">Complaints</li>
 				</div>
 			</div>
-		</footer>
+			<div class="row p-3 mt-2">
+				<img
+					src="../images/logo-white.svg"
+					alt="Sanlam Indie"
+					class="mt-3"
+				/>
+			</div>
+			<div class="row pl-3 pt-2 d-flex align-items-center">
+				<img src="../images/youtube.svg" alt="Youtube" class="mr-4" />
+				<img
+					src="../images/instagram.svg"
+					alt="Instagram"
+					class="mr-4"
+				/><img src="../images/facebook.svg" alt="Facebook" class="mr-4" />
+				<img src="../images/twitter.svg" alt="Twitter" class="mr-3" />
+				<img src="../images/linkedin.svg" alt="linkedIn" />
+			</div>
+			<div class="row p-3 mt-2">
+				<p class="small-text " >
+					Copyright © Sanlam Indie 2020. All Rights Reserved. Sanlam Indie's
+					product offering is underwritten by Sanlam Life Insurance Limited,
+					a registered long-term insurer. Sanlam Indie is a division of
+					Sanlam Life Insurance Limited - Reg No. 1998/021121/06. Sanlam
+					Life Insurance Limited is an authorised FSP (No. 2759). Address:
+					Tygerpark 5, 2nd Floor, Tyger Valley, Bellville Park, Cape Town,
+					7530, South Africa.
+					<span class="bold">Privacy | Terms of Use</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<div id="dys-toggle" class="hide-toggle"></div>
 	</body>
 	<script
 		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
