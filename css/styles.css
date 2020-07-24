@@ -1,11 +1,11 @@
 /* importing fonts */
 @font-face {
 	font-family: OpenDyslexic;
-	src: url('../fonts/OpenDyslexic-Regular.otf');
+	src: url("../fonts/OpenDyslexic-Regular.otf");
 }
 /* body styles */
 body {
-	font-family: 'Roboto';
+	font-family: "Roboto";
 	font-weight: 300;
 	overflow-x: hidden;
 }
@@ -61,10 +61,10 @@ nav {
 	.btn-navbar {
 		margin-top: 15px;
 		font-size: 22px;
-		font-family: 'robotomedium';
+		font-family: "robotomedium";
 	}
 	.btn-navbar {
-		font-family: 'robotoregular';
+		font-family: "robotoregular";
 	}
 }
 @media only screen and (max-width: 844px) {
@@ -476,7 +476,7 @@ h2 {
 	color: #f26901;
 }
 
-input[type='file'] {
+input[type="file"] {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -921,8 +921,8 @@ a:hover {
 }
 
 .darkmode {
-	background-color: rgba(20, 22, 23) !important;
-	color: rgb(139, 132, 122) !important;
+	background-color: #141617 !important;
+	color: #bbb9b4 !important;
 }
 
 .darkmode h1,
@@ -933,20 +933,40 @@ a:hover {
 .darkmode h6,
 .darkmode p,
 .darkmode .text-white {
-	color: rgb(139, 132, 122) !important;
+	color: #bbb9b4 !important;
 }
 
 .darkmode a {
-	color: rgb(164, 160, 153) !important;
+	color: #bbb9b4 !important;
 }
-
+.darkmode .brand-black {
+	color: #bbb9b4 !important;
+}
+.darkmode .form-control,
+.darkmode .form-control-text {
+	background: transparent;
+}
+.darkmode .search-rounded,
+.darkmode .search {
+	background-color: #dfdcdc;
+	border: none;
+}
+.darkmode .breadcrumb {
+	background-color: #000000 !important;
+}
+.darkmode .pill-small {
+	background-color: #000000 !important;
+}
+.darkmode .pill-small-warning {
+	background-color: #000000 !important;
+}
 .darkmode .current-opportunities {
 	background-color: rgb(0, 80, 137) !important;
-	color: rgb(197, 195, 193) !important;
+	color: #bbb9b4 !important;
 }
 
 .darkmode .btn-outline-dark {
-	color: rgb(144, 137, 128) !important;
+	color: #bbb9b4 !important;
 }
 
 .darkmode .blue {
