@@ -945,6 +945,13 @@ a:hover {
 .darkmode .form-control,
 .darkmode .form-control-text {
 	background: transparent;
+	color: #9b9a96;
+}
+.darkmode .form-control:focus,
+.darkmode .form-control-text:focus,
+.darkmode .form-control:active,
+.darkmode .form-control-text:active {
+	color: #bbb9b4;
 }
 .darkmode .search-rounded,
 .darkmode .search {
