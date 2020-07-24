@@ -939,6 +939,22 @@ a:hover {
 .darkmode a {
 	color: #bbb9b4 !important;
 }
+.darkmode .active {
+	color: rgb(2, 96, 164) !important;
+}
+.darkmode .btn-primary {
+	background-color: rgb(2, 96, 164) !important;
+	border: none;
+	color: #dcdad5 !important;
+}
+.darkmode .career-hr {
+	border-top: 2px solid rgba(255, 255, 255, 0.3);
+	margin-top: 2px;
+}
+.darkmode .blue-uppercase,
+.darkmode .blue {
+	color: rgb(2, 96, 164) !important;
+}
 .darkmode .brand-black {
 	color: #bbb9b4 !important;
 }
@@ -974,10 +990,6 @@ a:hover {
 
 .darkmode .btn-outline-dark {
 	color: #bbb9b4 !important;
-}
-
-.darkmode .blue {
-	color: rgb(71, 156, 217) !important;
 }
 
 .darkmode .bg-aqua-gradient,
