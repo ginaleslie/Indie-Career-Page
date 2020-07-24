@@ -61,16 +61,13 @@ nav {
 	.btn-navbar {
 		margin-top: 15px;
 		font-size: 22px;
-		font-family: "robotomedium";
-	}
-	.btn-navbar {
-		font-family: "robotoregular";
 	}
 }
 @media only screen and (max-width: 844px) {
 	.navbar-expand-md .navbar-nav .nav-link {
 		padding-right: 1.2rem;
 		padding-left: 0;
+		font-family: "Roboto";
 	}
 	.btn-navbar {
 		padding: 0;
@@ -798,6 +795,10 @@ a:hover {
 	.breadcrumb-item {
 		font-size: 13px;
 	}
+	nav .dropdown {
+		position: relative;
+		margin-top: 50px;
+	}
 }
 @media only screen and (max-width: 375px) {
 	.width-100 {
@@ -1000,6 +1001,9 @@ a:hover {
 	) !important;
 }
 
+.darkmode .navbar-light {
+	color: white;
+}
 .darkmode .bg-aqua-gradient h2,
 .darkmode .bg-aqua-gradient p {
 	color: rgb(197, 195, 193) !important;
@@ -1025,4 +1029,7 @@ a:hover {
 
 .darkmode .job-card {
 	background-color: #212529;
+}
+.darkmode .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(179, 174, 167, .7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
