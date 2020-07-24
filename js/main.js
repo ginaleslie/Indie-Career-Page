@@ -1,41 +1,39 @@
-$(function () {
-	const dysToggle = document.getElementById("dys-toggle");
+const dysToggle = document.getElementById("dys-toggle");
 
-	bodyId = document.getElementById("changeFont");
+bodyId = document.getElementById("changeFont");
+var showDys;
+dysToggle.addEventListener("click", dys);
+function dys() {
+	showDys = !showDys;
 
-	dysToggle.addEventListener("click", dys);
-	function dys() {
-		showDys = !showDys;
+	if (showDys === true) {
+		bodyId.style.fontFamily = "OpenDyslexic";
 
-		if (showDys === true) {
-			bodyId.style.fontFamily = "OpenDyslexic";
+		dysToggle.innerText = "Disable font";
+	} else {
+		bodyId.style.fontFamily = "Roboto";
 
-			dysToggle.innerText = "Disable font";
-		} else {
-			bodyId.style.fontFamily = "Roboto";
-
-			dysToggle.innerText = "Enable font";
-		}
-
-		localStorage.setItem("font", bodyId.style.fontFamily);
-
-		localStorage.setItem("fontText", dysToggle.innerText);
+		dysToggle.innerText = "Enable font";
 	}
 
-	const storedFam = localStorage.getItem("font");
+	localStorage.setItem("font", bodyId.style.fontFamily);
 
-	if (storedFam) {
-		bodyId.style.fontFamily = storedFam;
-	}
+	localStorage.setItem("fontText", dysToggle.innerText);
+}
 
-	const storedText = localStorage.getItem("fontText");
-	if (storedText) {
-		dysToggle.innerText = storedText;
-	}
+const storedFam = localStorage.getItem("font");
 
-	const storedBool = localStorage.getItem("fontBool");
-	if (storedBool) {
-		showDys = storedBool;
-	}
-	localStorage.setItem("fontBool", showDys);
-});
+if (storedFam) {
+	bodyId.style.fontFamily = storedFam;
+}
+
+const storedText = localStorage.getItem("fontText");
+if (storedText) {
+	dysToggle.innerText = storedText;
+}
+
+const storedBool = localStorage.getItem("fontBool");
+if (storedBool) {
+	showDys = storedBool;
+}
+localStorage.setItem("fontBool", showDys);
